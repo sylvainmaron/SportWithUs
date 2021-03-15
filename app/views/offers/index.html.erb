@@ -1,1 +1,6 @@
 <p>coucou</p>
+
+<% @offers.each do |offer| %>
+  <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
+  <%= offer.time %>
+<% end %>
