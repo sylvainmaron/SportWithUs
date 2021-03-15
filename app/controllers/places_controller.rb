@@ -1,5 +1,4 @@
 class PlacesController < ApplicationController
-  
   private
 
   def article_params
