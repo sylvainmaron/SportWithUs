@@ -3,10 +3,11 @@
 
 
 <h1 class="text-center">Choose your game :</h1>
-  <%= link_to "Match matches !", offers_path %>
-  <%= link_to "Host a game", new_offer_path %>
-  <%= link_to "Go on my profile" %>
-  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-
+<ul class="text-center">
+  <li ><%= link_to "Match matches !", offers_path %></li>
+  <li><%= link_to "Host a game", new_offer_path %></li>
+  <li><%= link_to "Go on my profile" %></li>
+  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+</ul>
 
 
