@@ -1,6 +1,6 @@
 <div class="cards-container">
   <% @offers.each do |offer| %>
-    <div class="card">
+    <div class="card" data-offer-id= <% offer.id %> data-user-id= <% current_user.id %>>
       <div class="opac">
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
@@ -10,4 +10,3 @@
     </div>
   <% end %>
 </div>
-
