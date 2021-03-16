@@ -24,14 +24,12 @@ const initHammer = () => {
       }
   
       card.style.transform = `translateX(${posX}px) translateY(${posY}px) rotate(${angle}deg)`;
-      play.style.opacity = 0;
-      pass.style.opacity = 0;
+      card.classList.remove('card--matching');
+      card.classList.remove('card--nexting');
       if (posX > thresholdMatch) {
         card.classList.add('card--matching');
-        play.style.opacity = 1;
       } else if (posX < -thresholdMatch) {
         card.classList.add('card--nexting');
-        pass.style.opacity = 1;
       }
   
       if (e.isFinal) {
