@@ -17,6 +17,9 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.4);
+    img {
+        border-radius: 8px;
+    }
 }
 
 .opac {
@@ -48,4 +51,10 @@
     border-radius: 8px;
     padding: 5px 5px;
     transition: opacity 0.3s ease-in-out;
+}
+
+.square {
+    background-color: red;
+    height: 100px;
+    width: 50px;
 }
