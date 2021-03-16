@@ -1,5 +1,5 @@
 .home-container {
-    transform: translateY(50px);
+    transform: translateY(40px);
     position: relative;
     margin: 0 auto;
     width: 350px;
@@ -8,10 +8,21 @@
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(#c4d3e4,.5);
+    .home-title {
+        transform: translateX(-30px);
+        height: 100px;
+        width: 350px;
+        background-color: #39ac2f;
+    }
+    .text-center {
+        padding-top: 30px;
+        color: white;
+        border: 1px solid white;
+    }
 }
 
 .text-container {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0px;
     align-items: center;
     justify-content: center;
