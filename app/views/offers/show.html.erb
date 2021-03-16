@@ -1,6 +1,7 @@
 <h2><%= @offer.title %></h2>
-  <p><%= "#{@offer.time}" %></p>
-  <p><%= "#{@offer.min_players}" %></p>
+  <p><%= "The game will be held on: " "#{@offer.time}" %></p>
+  <p><%= "#{@offer.min_players}"" Players needed" %></p>
   <%= link_to "See more games", offers_path %>
+  <%= link_to "Chat", chatroom_path %>
 
 
