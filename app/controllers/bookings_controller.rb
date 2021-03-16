@@ -6,7 +6,7 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @offer = Offer.find(params[:id])
+    @offer = Offer.find(params[:offer_id])
     @booking.user = current_user
     @booking.offer = @offer
     if @booking.save
