@@ -7,7 +7,7 @@
   <br>
   <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
   <br>
-  <li><%= link_to "Go on my profile", class: "btn btn-classic" %></li>
+  <li><%= link_to "Go on my profile", user_path(current_user) %></li>
   <br>
   <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-classic" %></li>
 </ul>
