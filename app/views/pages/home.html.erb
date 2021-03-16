@@ -1,16 +1,15 @@
 
-<h1 class="text-center">Allez le football</h1>
-
+<div class="home-container"><h1 class="text-center">>Allez le football</h1>
 <h1 class="text-center">Choose your game :</h1>
-<ul class="text-center">
+<ul class="text-container">
 <br>
-  <li ><%= link_to "Match matches !", offers_path %></li>
+  <li ><%= link_to "Find your match !", offers_path, class: "btn btn-classic" %></li>
   <br>
-  <li><%= link_to "Host a game", new_offer_path %></li>
+  <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
   <br>
-  <li><%= link_to "Go on my profile" %></li>
+  <li><%= link_to "Go on my profile", class: "btn btn-classic" %></li>
   <br>
-  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+  <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-classic" %></li>
 </ul>
 
-
+</div>
