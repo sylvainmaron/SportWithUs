@@ -1,8 +1,14 @@
-function fetchingCard(card) {
+import { csrfToken } from "@rails/ujs";
+
+
+const fetchingCard = (card) => {
+  console.log("je suis la", card.classList.contains("card--matching"))
+  console.log(csrfToken())
   if (card.classList.contains("card--matching")) {
-    fetch("localhost:3000/offers/:offer_id/bookings", {
-      method: "POST",
-      body: JSON.stringify({ query: card.currentTarget.value })
+    console.log()
+    fetch(`offers/${card.dataset.offerId}/bookings`, {
+      method: "POST", 
+      headers: { "X-CSRF-Token": csrfToken() }
     })
       .then(response => response.json())
       .then((data) => {

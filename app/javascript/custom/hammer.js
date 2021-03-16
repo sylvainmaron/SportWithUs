@@ -1,6 +1,6 @@
 import 'hammerjs'
 
-const initHammer = () => {
+const initHammer = (callback) => {
   const cards = document.querySelectorAll(".card");
   const play = document.querySelector(".play");
   const pass = document.querySelector(".pass");
@@ -26,16 +26,17 @@ const initHammer = () => {
       card.style.transform = `translateX(${posX}px) translateY(${posY}px) rotate(${angle}deg)`;
       card.classList.remove('card--matching');
       card.classList.remove('card--nexting');
-      if (posX > thresholdMatch) {
+      if (posX > thresholdMatch) { 
         card.classList.add('card--matching');
       } else if (posX < -thresholdMatch) {
         card.classList.add('card--nexting');
       }
-  
+      
       if (e.isFinal) {
         card.style.transform = ``;
         if (posX > thresholdMatch) {
           card.classList.add('card--match');
+          callback(card);
         } else if (posX < -thresholdMatch) {
           card.classList.add('card--next');
         } else {
