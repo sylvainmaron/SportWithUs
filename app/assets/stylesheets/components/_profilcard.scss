@@ -29,5 +29,20 @@
   .bookings {
     border-top: 2px solid rgba(156, 140, 140, 0.349);
   }
+
+  footer {
+    display: flex;
+    background: darkslategray;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: -32px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+  }
 }
 
