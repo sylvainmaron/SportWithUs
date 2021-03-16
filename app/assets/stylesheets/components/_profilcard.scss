@@ -1,0 +1,29 @@
+.profile-card {
+  transform: translateY(32px);
+  position: relative;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 8px;
+  width: 380px;
+  height: 560px;
+  border: 1px solid rgba(151, 151, 151, 0.534);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: beige;
+  
+  .profile-img {
+    height: 100px;
+    width: 100px;
+    background: 
+    url(https://static.lpnt.fr/images/2018/01/17/12932167lpw-12941360-embed-libre-jpg_4921361.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+}
+
