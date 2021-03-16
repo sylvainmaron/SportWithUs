@@ -10,7 +10,7 @@ const initBtnAnimate = ()=> {
                 button.classList.remove("onclic")
                 button.classList.add("validate")
                 button.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>'
-            },1000);
+            },2000);
         })
     })
 }
