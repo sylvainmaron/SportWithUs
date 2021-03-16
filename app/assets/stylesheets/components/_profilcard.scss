@@ -24,8 +24,31 @@
     left: -25px;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+    &:active {
+      transform: rotate(-360deg);
+      transition: transform 500ms ease-in-out;
+    }
   }
 
+  .btn-profil {
+    background-color: darkslategray;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: beige;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+
+    &:active {
+      box-shadow: 0px 0px 0px 1.5px rgba(253, 253, 253, 0.5);
+      transform: scale(1);
+      background-color: beige;
+      color: darkslategray;
+      border: 1px solid darkslategray;
+    }
+  }
+  
   .bookings {
     border-top: 2px solid rgba(156, 140, 140, 0.349);
   }
@@ -42,7 +65,5 @@
     margin-left: -32px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
   }
 }
-
