@@ -1,14 +1,9 @@
 <div class="cards-container">
   <% @offers.each do |offer| %>
     <div class="card">
-      <div class="opac">
-        <h2 class="play">Play</h2>
-        <h2 class="pass">Pass</h2>
-      </div>
         <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
         <%= offer.time %>
     </div>
   <% end %>
 </div>
 
-<div class="square"></div>
