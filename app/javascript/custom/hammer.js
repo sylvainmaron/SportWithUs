@@ -11,3 +11,6 @@
 //   console.log("You're doubletaping me!");
 //   console.log(e);
 // });
+
+const play = document.querySelector(".play");
+const pass = document.querySelector(".pass");

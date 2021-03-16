@@ -1,0 +1,51 @@
+.cards-container {
+    position: relative;
+    top: 0px;
+    bottom: 70px;
+    height: calc(100vh - 143px);
+    width: calc(100% - 6px);
+    margin: 0 auto;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3px 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.4);
+}
+
+.opac {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.play {
+    color: #2ecc71;
+    transform: rotateZ(-25deg);
+    font-weight: bold;
+    font-size: 48px;
+    border: 3px solid #2ecc71;
+    border-radius: 8px;
+    padding: 5px 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pass {
+    color: #e74c3c;
+    transform: rotateZ(25deg);
+    font-weight: bold;
+    font-size: 48px;
+    border: 3px solid #e74c3c;
+    border-radius: 8px;
+    padding: 5px 5px;
+    transition: opacity 0.3s ease-in-out;
+}
