@@ -10,7 +10,20 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
+
+  header {
+    display: flex;
+    background-color: #39ac2f;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: -32px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   }
   
   .profile-img {
     height: 100px;
@@ -32,7 +45,7 @@
   }
 
   .btn-profil {
-    background-color: darkslategray;
+    background-color: #39ac2f;
     padding: 14px;
     font-size: 16px;
     border-radius: 8px;
@@ -44,8 +57,8 @@
       box-shadow: 0px 0px 0px 1.5px rgba(253, 253, 253, 0.5);
       transform: scale(1);
       background-color: beige;
-      color: darkslategray;
-      border: 1px solid darkslategray;
+      color: #39ac2f;
+      border: 1px solid #39ac2f;
     }
   }
 
@@ -60,7 +73,7 @@
 
   footer {
     display: flex;
-    background: darkslategray;
+    background: #39ac2f;
     color: white;
     width: 100%;
     position: absolute;
