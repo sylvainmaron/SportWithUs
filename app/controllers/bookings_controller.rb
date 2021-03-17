@@ -9,7 +9,6 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to offer_path(@offer)
     else
-      byebug
       render offers_path
     end
   end
