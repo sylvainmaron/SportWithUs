@@ -1,0 +1,37 @@
+<div class="profile-card">
+  <header>
+  </header>
+   <div id="login-container">
+      <div class="profile-img"></div>
+         <h1>Ronaldinho</h1><h3>40 ans</h3>
+         <br>
+      <div class="description">
+         Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
+      </div>
+   </div>
+   <br>
+   <br>
+   <%= link_to "Find a Game", offers_path, class: "btn-profil"%>
+   <br>
+   <br>
+   <div class="bookings">
+      <h2>My games</h2>
+        <div class="booking-field">
+          <br>
+            <%# @offer.bookings.each do |booking| %>
+              <%# <ul> %>
+                <%# <li> %>
+                  <%#= booking.user.name %>, reserved <%#= @offer.name %> for <%#= booking.status %>
+                <%# </li> %>
+              <%# </ul> %>
+            <%# end %>
+        </div>
+   </div>
+
+   <footer>
+   </footer>
+</div>
+
+
+
+

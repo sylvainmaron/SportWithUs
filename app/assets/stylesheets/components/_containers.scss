@@ -1,0 +1,37 @@
+.home-container {
+    transform: translateY(40px);
+    position: relative;
+    margin: 0 auto;
+    width: 350px;
+    height: 550px;
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(#c4d3e4,.5);
+    .home-title {
+        transform: translateX(-30px);
+        height: 100px;
+        width: 350px;
+        background-color: #39ac2f;
+        box-shadow: 0 10px 10px rgba(#000000,.3);
+    }
+    .text-center {
+        padding-top: 26px;
+        color: white;
+    }
+    .encadrer {
+        border: 2px solid white;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.text-container {
+    margin-top: 50px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

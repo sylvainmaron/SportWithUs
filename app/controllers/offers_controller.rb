@@ -19,6 +19,8 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.find(params[:id])
+    @booking = Booking.new
+    @bookings = Booking.find_by(id: @offer)
   end
 
   private

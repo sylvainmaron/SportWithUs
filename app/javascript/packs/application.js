@@ -30,10 +30,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { initChatroomCable } from "../channels/chatroom_channel";
 import { fetchingCard } from "../custom/fetching"
+import { initBtnAnimate } from "./plugins/btn_animate";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initChatroomCable()
   initHammer(fetchingCard)
+  initBtnAnimate()
 });

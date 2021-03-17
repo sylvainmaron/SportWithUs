@@ -1,0 +1,9 @@
+<%= form_for(@booking) do |f| %>
+  <%= f.label :offers_id %>
+  <%= f.text_field :offers_id %>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id %>
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+  <%= f.submit "book it !", class: "btn btn-primary"%>
+<% end %>

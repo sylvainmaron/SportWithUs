@@ -1,0 +1,87 @@
+.profile-card {
+  transform: translateY(32px);
+  position: relative;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 8px;
+  width: 380px;
+  height: 560px;
+  border: 1px solid rgba(151, 151, 151, 0.534);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+
+  header {
+    display: flex;
+    background-color: #39ac2f;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: -32px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   }
+  
+  .profile-img {
+    height: 100px;
+    width: 100px;
+    background: 
+    url(https://static.lpnt.fr/images/2018/01/17/12932167lpw-12941360-embed-libre-jpg_4921361.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+    &:active {
+      transform: rotate(-360deg);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+
+  .btn-profil {
+    background-color: #39ac2f;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: beige;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+
+    &:active {
+      box-shadow: 0px 0px 0px 1.5px rgba(253, 253, 253, 0.5);
+      transform: scale(1);
+      background-color: beige;
+      color: #39ac2f;
+      border: 1px solid #39ac2f;
+    }
+  }
+
+  .description {
+    border: 1px ridge black;
+    padding: 8px;
+  }
+  
+  .bookings {
+    border-top: 2px groove rgba(156, 140, 140, 0.349);
+  }
+
+  footer {
+    display: flex;
+    background: #39ac2f;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: -32px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
