@@ -6,4 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Offer.create!(title:"LE MATCH DU DIMANCHE", time:"2021/09/12", min_players:14)
+Offer.destroy_all
+User.destroy_all

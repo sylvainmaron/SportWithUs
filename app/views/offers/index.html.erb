@@ -1,6 +1,12 @@
-<p>coucou</p>
-
-<% @offers.each do |offer| %>
-  <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
-  <%= offer.time %>
-<% end %>
+<div class="cards-container">
+  <% @offers.each do |offer| %>
+    <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>">
+      <div class="opac">
+        <h2 class="play">Play</h2>
+        <h2 class="pass">Pass</h2>
+      </div>
+        <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
+        <%= offer.time %>
+    </div>
+  <% end %>
+</div>
