@@ -1,24 +1,15 @@
 class BookingsController < ApplicationController
-  
-  def new
-    @bookings = Booking.new
-  end
-
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new(status: :play)
     @offer = Offer.find(params[:offer_id])
+    @booking.offer_id = @offer.id
     @booking.user = current_user
-    @booking.offer = @offer
+
+    
     if @booking.save
       redirect_to offer_path(@offer)
     else
-      render :new
+      render offers_path
     end
-  end
-
-  private
-
-  def booking_params
-    params.require(:booking).permit(:status)
   end
 end
