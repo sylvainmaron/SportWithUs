@@ -13,11 +13,18 @@
         height: 100px;
         width: 350px;
         background-color: #39ac2f;
+        box-shadow: 0 10px 10px rgba(#000000,.3);
     }
     .text-center {
-        padding-top: 30px;
+        padding-top: 26px;
         color: white;
-        border: 1px solid white;
+    }
+    .encadrer {
+        border: 2px solid white;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

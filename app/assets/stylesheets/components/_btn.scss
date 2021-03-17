@@ -1,4 +1,4 @@
-$green: #1ECD97;
+$green: #39ac2f;
 $gray: #bbbbbb;
 // * {
 //   font-family: 'Roboto', sans-serif;
@@ -67,14 +67,17 @@ $gray: #bbbbbb;
 //   <button class="btn-animate"> Create  </button>
 
 .btn-classic {
-    width: 250px;
-    height: 40px;
-    text-align: center;
-    letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size: 25px;
+    // text-align: center;
     background: #2063ac;
     color: white;
     transition: ease-in-out .3s;
     border-radius: 4px;
+    border: 3px outset #587ea7;
     box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
 
     &:active {
@@ -82,6 +85,7 @@ $gray: #bbbbbb;
         transform: scale(1.20);
         background-color: white;
         color: #2063ac;
+        border-color: $green;
         font-weight: bolder;
 }
 }
