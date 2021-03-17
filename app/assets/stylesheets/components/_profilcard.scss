@@ -48,9 +48,14 @@
       border: 1px solid darkslategray;
     }
   }
+
+  .description {
+    border: 1px ridge black;
+    padding: 8px;
+  }
   
   .bookings {
-    border-top: 2px solid rgba(156, 140, 140, 0.349);
+    border-top: 2px groove rgba(156, 140, 140, 0.349);
   }
 
   footer {
