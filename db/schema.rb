@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_15_152039) do
+ActiveRecord::Schema.define(version: 2021_03_17_111600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 2021_03_15_152039) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "offers_id"
-    t.index ["offers_id"], name: "index_bookings_on_offers_id"
+    t.bigint "offer_id"
+    t.index ["offer_id"], name: "index_bookings_on_offer_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
@@ -93,7 +93,7 @@ ActiveRecord::Schema.define(version: 2021_03_15_152039) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "bookings", "offers", column: "offers_id"
+  add_foreign_key "bookings", "offers"
   add_foreign_key "bookings", "users"
   add_foreign_key "messages", "chatrooms"
   add_foreign_key "messages", "users"
