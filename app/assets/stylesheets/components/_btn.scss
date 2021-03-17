@@ -81,11 +81,11 @@ $gray: #bbbbbb;
     box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
 
     &:active {
-        box-shadow: 0px 0px 0px 1px rgba($green ,0.6);
+        box-shadow: 0px 0px 7px 7px rgba(white,0.5);
         transform: scale(1.10);
         background-color: #2063ac .4;
         color: white;
-        border-color: $green;
+        border-color: white;
         font-weight: bolder;
 }
 }
