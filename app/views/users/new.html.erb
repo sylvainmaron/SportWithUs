@@ -1,0 +1,10 @@
+  <%= form_for(@user) do |f| %>
+  <%= f.label :nickname %>
+  <%= f.text_field :nickname %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :age %>
+  <%= f.integer :age %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit "Create your profil", class: "btn btn-primary"%>
+  <% end %>

@@ -5,4 +5,15 @@ class UsersController < ApplicationController
     @offers = current_user.offers
     @bookings_by_other_user = Booking.where(offer: @offers)
   end
+
+  def new
+    @user = User.new
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+
+
 end

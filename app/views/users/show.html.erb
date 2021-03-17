@@ -1,8 +1,9 @@
 <div class="profile-card">
+  <header>
+  </header>
    <div id="login-container">
       <div class="profile-img"></div>
          <h1>Ronaldinho</h1><h3>40 ans</h3>
-         <br>
          <br>
       <div class="description">
          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
@@ -14,7 +15,17 @@
    <br>
    <br>
    <div class="bookings">
-      <h2>My bookings</h2>
+      <h2>My games</h2>
+        <div class="booking-field">
+          <br>
+            <%# @offer.bookings.each do |booking| %>
+              <%# <ul> %>
+                <%# <li> %>
+                  <%#= booking.user.name %>, reserved <%#= @offer.name %> for <%#= booking.status %>
+                <%# </li> %>
+              <%# </ul> %>
+            <%# end %>
+        </div>
    </div>
 
    <footer>
