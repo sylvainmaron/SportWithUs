@@ -41,7 +41,7 @@
     border: 3px solid #2ecc71;
     border-radius: 8px;
     padding: 5px 5px;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .pass {
@@ -52,7 +52,20 @@
     border: 3px solid #e74c3c;
     border-radius: 8px;
     padding: 5px 5px;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.play--transition, .pass--transition {
+    animation: opac 0.3s forwards;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .card--match {

@@ -2,8 +2,6 @@ import 'hammerjs'
 
 const initHammer = (callback) => {
   const cards = document.querySelectorAll(".card");
-  const play = document.querySelector(".play");
-  const pass = document.querySelector(".pass");
   
   const maxAngle = 25;
   const smooth = 0.3;
@@ -13,7 +11,9 @@ const initHammer = (callback) => {
   
   function setupDragAndDrop(card) {
     const hammertime = new Hammer(card);
-  
+    const play = card.querySelector(".play");
+    const pass = card.querySelector(".pass");
+
     hammertime.on('pan', function (e) {
       card.classList.remove('card--back');
       let posX = e.deltaX;
@@ -28,8 +28,13 @@ const initHammer = (callback) => {
       card.classList.remove('card--nexting');
       if (posX > thresholdMatch) { 
         card.classList.add('card--matching');
+        play.classList.add('play--transition');
       } else if (posX < -thresholdMatch) {
         card.classList.add('card--nexting');
+        pass.classList.add('pass--transition');
+      } else {
+        play.classList.remove('play--transition');
+        pass.classList.remove('pass--transition');
       }
       
       if (e.isFinal) {
