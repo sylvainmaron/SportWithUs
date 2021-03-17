@@ -17,12 +17,12 @@
     }
     .text-center {
         padding-top: 70px;
-        color: white;
+        color: rgba(0, 0, 0, 0.800);
         margin: 0 auto;
     }
     .encadrer {
         border: 5px solid white;
-        background: rgba(black, 0.25);
+        background: rgba(rgb(255, 255, 255), 0.7);
         box-shadow:  15px 15px 15px rgba(#ffffff,0.2);
         padding-top: 7px;
         padding-bottom: 7px;
@@ -39,9 +39,12 @@
     justify-content: center;
     text-align: center;
 }
-
+i{
+    color: rgba(0, 0, 0, 0.800);
+    background-color: rgba(rgb(255, 255, 255), 0.1);
+}
 .fa-futbol {
-    margin: 0 -2px;
+    margin: -0.7px;
     // animation: spin infinite;
 
 }
