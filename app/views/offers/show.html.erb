@@ -2,7 +2,7 @@
   <p><%= "The game will be held on: " "#{@offer.time}" %></p>
   <p><%= "#{@offer.min_players}"" Players needed" %></p>
   <%= link_to "See more games", offers_path, class: "btn-animate"%>
-  <%= link_to "Chat", chatroom_path, class: "btn-animate" %>
+  <%= link_to "Chat", @offer.chatroom, class: "btn-animate" %>
   <%= link_to "Book", class: "btn-animate" %>
 
 
