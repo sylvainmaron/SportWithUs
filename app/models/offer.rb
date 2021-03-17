@@ -1,5 +1,5 @@
 class Offer < ApplicationRecord
   has_many :bookings, dependent: :destroy
   belongs_to :user
-  has_one :chatroom
+  has_many :chatroom
 end
