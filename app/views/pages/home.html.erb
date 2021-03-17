@@ -1,17 +1,18 @@
 
 <div class="home-container">
 <div class="home-title">
-<h1 class="text-center">Sport With Us</h1></div>
+<h1 class="text-center"><span class="encadrer">Sport With Us</span></h1></div>
 
 <ul class="text-container">
 <br>
-  <li ><%= link_to "Find your match !", offers_path, class: "btn btn-classic" %></li>
+  <li><%= link_to "Find your match !", offers_path, class: "btn btn-classic" %></li>
   <br>
   <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
   <br>
   <li><%= link_to "Go on my profile", user_path(current_user), class: "btn btn-classic" %></li>
   <br>
-  <li><%= link_to "Log out ", destroy_user_session_path, method: :delete, class: "btn btn-classic" %> </li>
+  <%# <li><%= link_to "Log out ", destroy_user_session_path, method: :delete, class: "btn btn-classic" %>
+   <%# </li> %>
 </ul>
 
 </div>
