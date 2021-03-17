@@ -6,7 +6,7 @@ const fetchingCard = (card) => {
     fetch(`offers/${card.dataset.offerId}/bookings`, {
       method: "POST", 
       headers: { "X-CSRF-Token": csrfToken() },
-      body: JSON.stringify({status: 'validate'})
+      body: JSON.stringify({status: 'play'})
     })
       .then(response => response.json())
       .then((data) => {
