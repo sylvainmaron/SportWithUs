@@ -1,5 +1,5 @@
 const initBtnAnimate = ()=> {
-    console.log("coucou")
+
 
     const buttons = document.querySelectorAll(".btn-animate")
     buttons.forEach((button)=> {
