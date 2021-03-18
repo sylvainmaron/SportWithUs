@@ -5,7 +5,10 @@ class OffersController < ApplicationController
 
   def create
     @offer = Offer.new(offer_params)
+
     @offer.user = current_user
+    @chatroom = Chatroom.create(name: "chatroom ##{@offer.title}")
+    @offer.chatroom = @chatroom
     if @offer.save
       redirect_to offers_path
     else

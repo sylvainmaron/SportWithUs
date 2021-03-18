@@ -15,8 +15,13 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
-  
-    <footer>
-    </footer>
+   <div class="tapbar">
+    <ul class="tapbar-items">
+      <li class="tapbar-item"><%= link_to  "Home", root_path %></li>
+      <li class="tapbar-item"><%= link_to  "Cards", offers_path %></li>
+      <li class="tapbar-item"><%= link_to  "Cards", offers_path %></li>
+      <li class="tapbar-item"><%= link_to  "Profile", root_path %></li>
+    </ul>
+   </div>
   </body>
 </html>
