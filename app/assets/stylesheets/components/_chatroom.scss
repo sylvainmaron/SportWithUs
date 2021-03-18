@@ -1,74 +1,52 @@
 
 
-h1 {
-  text-align: center;
-  // position: sticky;
-  color: white;
-  margin-top: 180px;
-}
-
 .chatroom {
-  width: 100%;
   height: calc(100vh - 70px);
   background: url(https://images.pexels.com/photos/6077806/pexels-photo-6077806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-position: center;
-  position: relative;
-  overflow: hidden;
 }
 
-.all-messages {
-  padding: 2px;
-  // display: flex;
-  // width: 90%;
-  // border-radius: 8px;
+  .chat-title {
+    text-align: center;
+    color: white;
+    
+  } 
+
+      .all-messages {
+        padding: 2px;
+
+        .author {
+          color: white;
+          margin-right: 20px;
+        }
+      }
+
+        .message-container {
+          border-radius: 12px;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+          // overflow: hidden;
+          display: flex;
+          margin: 0 auto;
+          width: fit-content;
+          padding-left: 16px;
+          padding-right: 16px;
+          // height: 40px;
+          background-color: rgba(81, 192, 81, 0.849);
+          flex: 1;
+        }
+         
+
+//         
+
+  p {
+    margin: 0 auto;
+    font-size: larger;
+  }
+
   
 
-  .message-container {
-    border-radius: 16px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
-    // overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: fit-content;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 40px;
-    background-color: green;
-    flex: 1;
-    position: relative;
-  }
-}
 
-
-
-
-.input {
-  padding: 15px 5px;
-  width: 90%;
-  margin-bottom: 80px;
-  // transform: translateY(340px);
-  // margin: 80px auto;
-  // position: absolute;
-  // top: calc(100vh - 70px);
-}
-
-p {
-  margin: 0 auto;
-  font-size: larger;
-  margin-top: 4px;
-}
-
-.author {
-  font-size: 12px;
-  position: absolute;
-  left: 80%;
-  color: white;
-}
-
-#message {
+#messages {
+  height: calc(100vh - 149px);
   overflow: scroll;
-  margin-top: 100px;
-  // margin-bottom: 240px;
-  // height: 80vh;
 }
