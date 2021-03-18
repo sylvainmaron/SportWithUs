@@ -1,12 +1,15 @@
 <div class="cards-container">
   <% @offers.each do |offer| %>
-    <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>">
+    <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>" style="background-image: url(https://images.pexels.com/photos/6077806/pexels-photo-6077806.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6077806.jpg&fm=jpg); background-size: cover; background-position: center;">
       <div class="opac">
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
       </div>
-        <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
-        <%= offer.time %>
+      <div class="card-text">
+        <h3> <%= offer.title %> </h3>
+        <h3> <%= offer.time %> </h3>
+        <h3> <%= rand(1..14) %>/<%= offer.min_players %> players </h3>
+      </div>
     </div>
   <% end %>
 </div>
