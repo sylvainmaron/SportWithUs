@@ -5,8 +5,11 @@
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
       </div>
-        <h3> <%= link_to  offer.title, offer_path(offer) %> </h3>
-        <%= offer.time %>
+      <div class="card-text">
+        <h3> <%= offer.title %> </h3>
+        <h3> <%= offer.time %> </h3>
+        <h3> <%= rand(1..14) %>/<%= offer.min_players %> players </h3>
+      </div>
     </div>
   <% end %>
 </div>
