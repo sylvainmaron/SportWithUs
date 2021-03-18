@@ -31,6 +31,7 @@ import "bootstrap";
 import { initChatroomCable } from "../channels/chatroom_channel";
 import { fetchingCard } from "../custom/fetching"
 import { initBtnAnimate } from "./plugins/btn_animate";
+import { initializeClock } from "./plugins/timer";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -38,4 +39,5 @@ document.addEventListener('turbolinks:load', () => {
   initChatroomCable()
   initHammer(fetchingCard)
   initBtnAnimate()
+  initializeClock()
 });
