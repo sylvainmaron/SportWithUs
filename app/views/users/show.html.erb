@@ -1,37 +1,41 @@
-<div class="profile-card">
-  <header>
-  </header>
-   <div id="login-container">
-      <div class="profile-img"></div>
-        <br>
-        <h1>Ronaldinho</h1><h3>40 ans</h3>
-      <div class="description">
-         Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
-      </div>
-   </div>
-   <br>
-   <br>
-   <%= link_to "Find a Game", offers_path, class: "btn-profil"%>
-   <br>
-   <br>
-   <div class="bookings">
-      <h2>My games</h2>
-        <div class="booking-field">
+ <div class="background-profil"> 
+  <div class="profile-card">
+    <header>
+    </header>
+    <div id="login-container">
+        <div class="profile-img"></div>
           <br>
-            <%# @offer.bookings.each do |booking| %>
-              <%# <ul> %>
-                <%# <li> %>
-                  <%#= booking.user.name %>, reserved <%#= @offer.name %> for <%#= booking.status %>
-                <%# </li> %>
-              <%# </ul> %>
-            <%# end %>
+          <h1>Ronaldinho</h1><h3>40 ans</h3>
+        <div class="description">
+          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
         </div>
-   </div>
+    </div>
+    <br>
+    <br>
+    <%= link_to "Find a Game", offers_path, class: "btn-profil"%>
+    <br>
+    <br>
+    <div class="bookings">
+        <h2>My games</h2>
+          <%# if bookings.empty? = true %>
+          <div class="booking-field">
+            <br>
+              <% current_user.bookings.each do |booking| %>
+                <ul>
+                  <div class="booked">
+                    <li> 
+                      Reserved <%= booking.offer.title %> for <%= booking.status %>
+                    </li>
+                  </div>
+                </ul> 
+              <% end %>
+          </div>
+    </div>
 
-   <footer>
-   </footer>
+    <footer>
+    </footer>
+  </div>
 </div>
-
 
 
 

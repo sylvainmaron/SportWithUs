@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_offer, only: %i[show create]
-
+  
   def create
     @booking = Booking.new(status: :play)
 
