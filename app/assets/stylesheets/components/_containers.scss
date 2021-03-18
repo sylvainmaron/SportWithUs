@@ -8,15 +8,11 @@
     border-radius: 4px;
 
     overflow: hidden;
+
     .home-title {
         transform: translateX(-20px);
-        height: 100px;
+        height: 76px;
         width: 350px;
-        // background-color: #39ac2f;
-        // box-shadow: 0 10px 10px rgba(#000000,.3);
-    }
-    .text-center {
-        padding-top: 50px;
         color: rgba(0, 0, 0, 0.800);
         margin: 0 auto;
         text-shadow: 1px 1px 0 #ffffff,
@@ -43,24 +39,19 @@
                     -2px 1px 0 #39ac2f,
                     2px -1px 0 #39ac2f,
                     -2px -1px 0 #39ac2f;
-    }
-    .encadrer {
         border: 5px solid white;
         background: rgba(rgb(255, 255, 255), 0.7);
         box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
-        padding-top: 7px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-top: 10px;
+
     }
+
 }
 
 .text-container {
     margin-top: 50px;
     height:100%;
     padding: 0px;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 i{
@@ -69,38 +60,4 @@ i{
 }
 .fa-futbol {
     margin: -0.7px;
-    // animation: spin infinite;
-
 }
-
-// .spin {
-//   -webkit-animation: spin 2s infinite linear;
-//   -moz-animation: spin 2s infinite linear;
-//   -o-animation: spin 2s infinite linear;
-//   animation: spin 2s infinite linear;
-// }
-// @-moz-keyframes spin {
-//   from {
-//     -moz-transform: rotate(0deg);
-//   }
-//   to {
-//     -moz-transform: rotate(360deg);
-//   }
-// }
-// @-webkit-keyframes spin {
-//   from {
-//     -webkit-transform: rotate(0deg);
-//   }
-//   to {
-//     -webkit-transform: rotate(360deg);
-//   }
-// }
-// @keyframes spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-
