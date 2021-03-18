@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'places/name'
   devise_for :users
   root to: 'pages#home'
   resources :offers do
@@ -7,7 +6,7 @@ Rails.application.routes.draw do
     resources :places
   end
 
-  resources :chatrooms, only: :show do
+  resources :chatrooms, only: %i[show create] do
     resources :messages, only: :create
   end
   resources :users
