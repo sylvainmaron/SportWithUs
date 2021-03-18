@@ -17,15 +17,18 @@
     <br>
     <div class="bookings">
         <h2>My games</h2>
+          <%# if bookings.empty? = true %>
           <div class="booking-field">
             <br>
-              <%# @offer.bookings.each do |booking| %>
-                <%# <ul> %>
-                  <%# <li> %>
-                    <%#= booking.user.name %>, reserved <%#= @offer.name %> for <%#= booking.status %>
-                  <%# </li> %>
-                <%# </ul> %>
-              <%# end %>
+              <% current_user.bookings.each do |booking| %>
+                <ul>
+                  <div class="booked">
+                    <li> 
+                      Reserved <%= booking.offer.title %> for <%= booking.status %>
+                    </li>
+                  </div>
+                </ul> 
+              <% end %>
           </div>
     </div>
 

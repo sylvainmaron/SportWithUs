@@ -9,10 +9,10 @@
   position: relative;
   margin: 0 auto;
   padding: 32px;
-  border-radius: 8px;
+  border-radius: 16px;
   width: 380px;
   height: 560px;
-  border: 1px solid rgba(151, 151, 151, 0.534);
+  border: 5px solid #39ac2f;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -91,3 +91,24 @@
     border-bottom-right-radius: 8px;
   }
 }
+
+  .bookings {
+    justify-content: center;
+    margin: 0 auto;
+    
+
+    .booking-field {
+      height: 144px;
+      overflow: scroll;
+      margin: auto;
+      width: 90%;
+      margin-left: -6px;
+
+      .booked {
+        background-color: yellowgreen;
+        border-radius: 8px;
+        padding: 4px;
+      }
+    }
+  }
+  
