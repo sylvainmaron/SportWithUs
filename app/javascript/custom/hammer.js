@@ -6,7 +6,7 @@ const initHammer = (callback) => {
   const maxAngle = 25;
   const smooth = 0.3;
   const threshold = 42;
-  const thresholdMatch = 130;
+  const thresholdMatch = 120;
   cards.forEach(setupDragAndDrop);
   
   function setupDragAndDrop(card) {

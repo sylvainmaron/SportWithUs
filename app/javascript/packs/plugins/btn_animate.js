@@ -1,5 +1,4 @@
 const initBtnAnimate = ()=> {
-
     const buttons = document.querySelectorAll(".btn-animate")
     buttons.forEach((button)=> {
         button.addEventListener("click", (e)=>{
