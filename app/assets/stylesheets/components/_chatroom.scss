@@ -18,6 +18,8 @@
         .author {
           color: white;
           margin-right: 20px;
+          // text-decoration: none;
+          background-color: rgba(255, 255, 255, 0);
         }
       }
 
@@ -40,10 +42,12 @@
 
   p {
     margin: 0 auto;
-    font-size: larger;
+    font-size: 20px;
   }
 
-  
+  i {
+    text-decoration: none;
+  }
 
 
 #messages {
