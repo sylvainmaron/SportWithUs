@@ -9,7 +9,9 @@
   <br>
   <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
   <br>
+  <% if user_signed_in? %>
   <li><%= link_to "My profile", user_path(current_user), class: "btn btn-classic" %></li>
+  <% end %>
   <br>
   <%# <li><%= link_to "Log out ", destroy_user_session_path, method: :delete, class: "btn btn-classic" %>
    <%# </li> %>
