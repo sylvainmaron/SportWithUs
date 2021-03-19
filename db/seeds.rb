@@ -7,10 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Offer.destroy_all
-<<<<<<< HEAD
+
 Booking.destroy_all
-=======
+
 # User.destroy_all
 Booking.destroy_all
 
->>>>>>> master
