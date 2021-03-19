@@ -16,7 +16,7 @@
             </div>
           <% end %>
         </div>
-  <div class="input">
+  <div class="input-chatroom">
     <%= simple_form_for [ @chatroom, @message ], remote: true do |f| %>
       <%= f.input :content, label: false, placeholder: "Message ##{@chatroom.name}" %>
     <% end %>
