@@ -35,6 +35,8 @@ import { initBtnAnimate } from "./plugins/btn_animate";
 import { initializeClock } from "./plugins/timer";
 
 import { weatherFetch } from "../custom/weather_fetch"
+import { modalle } from "./plugins/modal"
+
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -43,11 +45,9 @@ document.addEventListener('turbolinks:load', () => {
   initChatroomCable()
   initHammer(fetchingCard)
   initBtnAnimate()
-
   initializeClock()
-
   weatherFetch()
-
+  modalle()
 });
 
 let vh = window.innerHeight * 0.01;
