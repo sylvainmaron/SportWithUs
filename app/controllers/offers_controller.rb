@@ -1,6 +1,7 @@
 class OffersController < ApplicationController
   def index
     @offers = Offer.all
+    @imgs = ["foot_1.jpeg", "foot_2.jpeg", "foot_3.jpeg", "foot_4.jpeg", "foot_5.jpeg"]
   end
 
   def create
