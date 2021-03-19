@@ -1,6 +1,7 @@
 class OffersController < ApplicationController
   def index
     @offers = Offer.all
+    @imgs = ["foot_1.jpeg", "foot_2.jpeg", "foot_3.jpeg", "foot_4.jpeg", "foot_5.jpeg"]
   end
 
   def create
@@ -29,6 +30,6 @@ class OffersController < ApplicationController
   private
 
   def offer_params
-    params.require(:offer).permit(:title, :time, :min_players)
+    params.require(:offer).permit(:title, :play_time, :min_players)
   end
 end
