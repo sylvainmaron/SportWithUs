@@ -1,6 +1,6 @@
 <div class="cards-container">
   <% @offers.each do |offer| %>
-    <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>" style="background-image: url("<%= image_path(@imgs.sample) %>"); background-size: cover; background-position: center;">
+    <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>" style="background-image: url(<%= image_path @imgs.sample %>); background-size: cover; background-position: center;">
       <div class="opac">
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
