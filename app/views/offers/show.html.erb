@@ -1,6 +1,7 @@
 <h2><%= @offer.title %></h2>
   <p><%= "The game will be held on: " "#{@offer.play_time}" %></p>
   <p><%= "#{@offer.min_players}"" Players needed" %></p>
+
   <%= link_to "See more games", offers_path, class: "btn-animate"%>
   <%= link_to "Chat", @offer.chatroom, class: "btn-animate" %>
   <%= link_to "Book", class: "btn-animate" %>
@@ -24,3 +25,14 @@
     <div class="smalltext">Seconds</div>
   </div>
 </div>
+
+
+  <%= link_to "See more games", offers_path, class: "btn-classic"%>
+  <%= link_to "Chat", chatroom_path(@offer.chatroom_id), class: "btn-classic" %>
+  <%= link_to "Book", class: "btn-classic" %>
+
+
+
+<%# , new_offer_booking_path %>
+
+
