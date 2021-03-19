@@ -1,6 +1,13 @@
 <%= simple_form_for @offer do |f| %>
   <%= f.input :title %>
+  <%= f.input :date %>
   <%= f.input :time %>
   <%= f.input :min_players %>
   <%= f.submit "Create offer", class: "btn btn-animate" %>
   <% end %>
+
+
+
+<%# <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00"> %>

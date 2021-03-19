@@ -1,5 +1,4 @@
 
-const endtime = ?
 
 function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
@@ -17,12 +16,15 @@ function getTimeRemaining(endtime) {
     };
   }
   
-  function initializeClock(id, endtime) {
-    const clock = document.getElementById(id);
-    // const daysSpan = clock.querySelector('.days');
-    // const hoursSpan = clock.querySelector('.hours');
-    // const minutesSpan = clock.querySelector('.minutes');
-    // const secondsSpan = clock.querySelector('.seconds');
+  function initializeClock() {
+    const clock = document.querySelector("#clockdiv")
+    if (!clock) return
+    const endtime = clock.dataset.dateMatch
+    const daysSpan = clock.querySelector('.days');
+    const hoursSpan = clock.querySelector('.hours');
+    const minutesSpan = clock.querySelector('.minutes');
+    const secondsSpan = clock.querySelector('.seconds');
+    
   
     function updateClock() {
       const t = getTimeRemaining(endtime);
@@ -40,8 +42,5 @@ function getTimeRemaining(endtime) {
     updateClock();
     const timeinterval = setInterval(updateClock, 1000);
   }
-  
-  const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-  initializeClock('clockdiv', deadline);
 
 export { initializeClock }

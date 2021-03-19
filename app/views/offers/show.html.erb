@@ -6,7 +6,7 @@
   <%= link_to "Book", class: "btn-animate" %>
 
 <h1>Countdown Clock</h1>
-<div id="clockdiv">
+<div id="clockdiv" data-date-match="<%= @offer.time %>">
   <div>
     <span class="days"></span>
     <div class="smalltext">Days</div>
