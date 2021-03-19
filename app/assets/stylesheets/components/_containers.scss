@@ -43,7 +43,6 @@
         background: rgba(rgb(255, 255, 255), 0.7);
         box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
         padding-top: 10px;
-
     }
 
 }
@@ -60,4 +59,25 @@ i{
 }
 .fa-futbol {
     margin: -0.7px;
+}
+
+.show-container {
+    width: 100vw;
+    height: calc(100vh - 140px);
+    background-color: $green;
+}
+
+.mini-show {
+    background-color: white;
+    width: 100vw;
+    height: calc(50vh - 70px);
+}
+
+.box-btn {
+    margin-top: 30px;
+}
+
+.kick {
+    color: white;
+    margin-top: 10px;
 }
