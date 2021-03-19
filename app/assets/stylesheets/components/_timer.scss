@@ -1,41 +1,48 @@
 body{
     text-align: center;
-    background: #00ECB9;
     font-family: sans-serif;
     font-weight: 100;
   }
-  
-  h1{
-    color: #396;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 40px 0px 20px;
-  }
-  
+
+  // h1{
+  //   color: #396;
+  //   font-weight: 100;
+  //   font-size: 40px;
+  //   margin: 40px 0px 20px;
+  // }
+
   #clockdiv{
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    // color: #ffffff;
+    font-size: 25px;
+    // left: 50%;
+    // top: 50%;
+    color: #daf6ff;
+    text-shadow: 0 10px 50px rgb(241, 43, 29),  0 0 20px rgba(230, 43, 10, 0.945);
     font-weight: 100;
-    text-align: center;
-    font-size: 30px;
+    // text-align: center;
+    // font-size: 30px;
   }
-  
+
   #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #0000004f;
     display: inline-block;
   }
-  
+
   #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    background: #0000005b;
     display: inline-block;
   }
-  
+
   .smalltext{
-    padding-top: 5px;
+    padding-top:5px;
     font-size: 16px;
+    color: #daf6ff;
+    font-weight: 100;
+
+    text-shadow: 0 0 20px rgb(245, 49, 23),  0 0 20px rgba(255, 20, 20, 0.808);
   }
