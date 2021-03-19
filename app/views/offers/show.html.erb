@@ -3,7 +3,7 @@
   <p><%= "#{@offer.min_players}"" Players needed" %></p>
 
   <%= link_to "See more games", offers_path, class: "btn-classic"%>
-  <%= link_to "Chat", chatroom_path, class: "btn-classic" %>
+  <%= link_to "Chat", chatroom_path(@offer.chatroom_id), class: "btn-classic" %>
   <%= link_to "Book", class: "btn-classic" %>
 
 
