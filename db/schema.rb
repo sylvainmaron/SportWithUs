@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2021_03_19_104341) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
     t.bigint "chatroom_id"
-    t.datetime "datetime"
+    t.datetime "play_time"
     t.index ["chatroom_id"], name: "index_offers_on_chatroom_id"
     t.index ["user_id"], name: "index_offers_on_user_id"
   end

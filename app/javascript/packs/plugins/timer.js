@@ -19,7 +19,8 @@ function getTimeRemaining(endtime) {
   function initializeClock() {
     const clock = document.querySelector("#clockdiv")
     if (!clock) return
-    const endtime = clock.dataset.dateMatch
+    console.log(clock)
+    const endtime = clock.dataset.dateTime
     const daysSpan = clock.querySelector('.days');
     const hoursSpan = clock.querySelector('.hours');
     const minutesSpan = clock.querySelector('.minutes');
