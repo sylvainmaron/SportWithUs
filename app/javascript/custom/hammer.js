@@ -18,19 +18,19 @@ const initHammer = (callback) => {
       card.classList.remove('card--back');
       let posX = e.deltaX;
       let posY = Math.max(0, Math.abs(posX * smooth) - 25);
-      let angle = Math.min(Math.abs(e.deltaX * smooth / 100), 1) * maxAngle;
+      let angle = Math.min(Math.abs(posX * smooth / 100), 1) * maxAngle;
       if (e.deltaX < 0) {
         angle *= -1;
       }
-  
+
       card.style.transform = `translateX(${posX}px) translateY(${posY}px) rotate(${angle}deg)`;
-      card.classList.remove('card--matching');
+      // card.classList.remove('card--matching');
       card.classList.remove('card--nexting');
       if (posX > thresholdMatch) { 
-        card.classList.add('card--matching');
+        // card.classList.add('card--matching');
         play.classList.add('play--transition');
       } else if (posX < -thresholdMatch) {
-        card.classList.add('card--nexting');
+        // card.classList.add('card--nexting');
         pass.classList.add('pass--transition');
       } else {
         play.classList.remove('play--transition');

@@ -18,14 +18,15 @@
 
 @import "components/card";
 
+
 body {
+    overflow: hidden;
     background-color: #2063ac;
 }
-
+ 
 p, a, li, input, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
 }
-
 
 .new-offer {
     display: flex;
@@ -35,4 +36,3 @@ p, a, li, input, h2, h3, h4 {
     width: 90%;
     height: calc(100vh - 70px);
 }
-

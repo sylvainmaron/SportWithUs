@@ -4,30 +4,32 @@
     <title>SportWithUs</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title"  content="iBreath">
+    <meta name="apple-mobile-web-app-status-bar-style"  content="black-translucent">
+    <link rel="apple-touch-icon" href="<%= image_path 'icons/apple-icon.png' %>" sizes="192x192">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= render 'shared/ios_pwa_links' %>
   </head>
 
   <body>
     <%= yield %>
-   <div class="tapbar">
-    <ul class="tapbar-items">
-      <% if user_signed_in? %>
-      <li class="tapbar-item"><%= link_to  "Home", root_path %></li>
-      <li class="tapbar-item"><%= link_to  "Cards", offers_path %></li>
-      <li class="tapbar-item"><%= link_to  "Cards", offers_path %></li>
-      <li class="tapbar-item"><%= link_to  "Profile", user_path(current_user) %></li>
-      <% else %>
-            <li class="tapbar-item"><%= link_to  "Home", new_user_session_path %></li>
-            <li class="tapbar-item"><%= link_to  "Cards", new_user_session_path %></li>
-            <li class="tapbar-item"><%= link_to  "Cards", new_user_session_path %></li>
-            <li class="tapbar-item"><%= link_to  "Profile", new_user_session_path %></li>
-      <% end %>
-
-    </ul>
-   </div>
+    <div class="tapbar">
+      <ul class="tapbar-items">
+        <li class="tapbar-item"><%= link_to root_path do %><i class="fas fa-home"></i><% end %></li>
+        <li class="tapbar-item"><%= link_to offers_path do %><i class="fas fa-images"></i><% end %></li>
+        <li class="tapbar-item"><%= link_to offers_path do %><i class="fas fa-book"></i><% end %></li>
+        <% if user_signed_in?  %>
+          <li class="tapbar-item"><%= link_to user_path(current_user) do %><i class="fas fa-id-card"></i><% end %></li>
+        <% else %>
+            <li class="tapbar-item"><%= link_to new_user_session_path do%><i class="fas fa-id-card"></i><% end %></li>
+        <% end %>
+      </ul>
+    </div>
   </body>
 </html>
