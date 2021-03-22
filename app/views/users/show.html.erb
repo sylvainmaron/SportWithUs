@@ -1,5 +1,5 @@
 
- <div class="background-profil"> 
+ <div class="background-profil">
   <div class="profile-card">
     <header>
     </header>
@@ -8,7 +8,7 @@
           <br>
           <h1>Ronaldinho</h1><h3>40 ans</h3>
         <div class="description">
-          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
+          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain
         </div>
     </div>
     <br>
@@ -17,22 +17,24 @@
     <br>
     <br>
     <div class="bookings">
-        <h2>My games</h2>
+        <h2>My games</h2> <button class="trigger">Click here to trigger the modal!</button>
           <%# if bookings.empty? = true %>
           <div class="booking-field">
             <br>
               <% current_user.bookings.each do |booking| %>
                 <ul>
                   <div class="booked">
-                    <li> 
+                    <li>
                       Reserved <%= booking.offer.title %> for <%= booking.status %>
-                      <button class="trigger">Click here to trigger the modal!</button>
+                      <%= link_to booking_path(booking), method: :delete do %>
+                          <i class="far fa-times-circle"> </i>
+                        <% end %>
                     </li>
                     <%# <div class="show-modal"> %>
                     
                     <%# </div> %>
                   </div>
-                </ul> 
+                </ul>
               <% end %>
           </div>
     </div>

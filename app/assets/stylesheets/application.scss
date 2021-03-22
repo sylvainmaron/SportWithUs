@@ -19,7 +19,20 @@
 @import "components/card";
 
 body {
-    overflow-x: hidden;
-    height: calc(var(--vh, 1vh) * 100);
     background-color: #2063ac;
 }
+
+p, a, li, input, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.new-offer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: calc(100vh - 70px);
+}
+

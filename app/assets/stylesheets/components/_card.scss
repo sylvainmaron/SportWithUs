@@ -2,7 +2,7 @@
     position: relative;
     top: 0px;
     bottom: 70px;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 70px);
     width: calc(100% - 6px);
     margin: 0 auto;
     overflow: hidden;
@@ -18,16 +18,16 @@
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.4);
+    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.6);
     img {
         border-radius: 8px;
-    }   
+    }
 }
 
 .card-text {
     width: 90%;
-    background-color: white;
-    color: #2063ac;
+    background-color: rgba(255, 255, 255, 0.719);
+    color: #000000;
     position: absolute;
     bottom: 10px;
     left: 5%;
@@ -84,12 +84,12 @@
     transition: 0.4s;
     transform:translateX(1500px) translateY(600px) rotate(90deg);
   }
-  
+
   .card--next {
     transition: 0.4s;
     transform:translateX(-1500px) translateY(600px) rotate(-90deg);
   }
-  
+
   .card--back {
     transition:0.4s;
   }
