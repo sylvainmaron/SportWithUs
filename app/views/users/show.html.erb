@@ -1,3 +1,4 @@
+
  <div class="background-profil"> 
   <div class="profile-card">
     <header>
@@ -26,14 +27,22 @@
                     <li> 
                       Reserved <%= booking.offer.title %> for <%= booking.status %>
                     </li>
-                    <div class="show-modal">
+                    <%# <div class="show-modal"> %>
                     <button class="trigger">Click here to trigger the modal!</button>
-                    </div>
+                    <%# </div> %>
                   </div>
                 </ul> 
               <% end %>
           </div>
     </div>
+
+   <div class="modal">
+     <div class="modal-content">
+       <span class="close-button">&times;</span>
+       <h1>Hello, I am a modal!</h1>
+      </div>
+    </div>
+
 
     <footer>
     </footer>
@@ -41,13 +50,6 @@
 </div>
 
 
-    <div class="modal">
-     
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h1>Hello, I am a modal!</h1>
-        </div>
-
-    </div>
+    
 
 

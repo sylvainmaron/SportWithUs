@@ -5,7 +5,9 @@ const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
 
   function toggleModal() {
-      modal.classList.toggle("show-modal");    
+    console.log(modal)  
+      modal.classList.toggle("modal");
+      console.log(modal)  
   }
 
 
