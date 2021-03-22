@@ -22,5 +22,6 @@ module SportWithUs
     # the framework and any gems in your application.
 
     config.hosts << /.+\.ngrok\.io/
+    config.hosts << "www.sportwithus.xyz"
   end
 end
