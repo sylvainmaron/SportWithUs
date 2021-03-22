@@ -131,3 +131,14 @@
     text-decoration: none;
     border: 1px solid white ;
   }
+
+  .proficard-title {
+    display: flex;
+    justify-content: center;
+
+    .fa-star:before {
+      color: yellow;
+      padding: 14px;
+      font-size: 32px;
+    }
+  }
