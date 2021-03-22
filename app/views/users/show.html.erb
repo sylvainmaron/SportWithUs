@@ -1,3 +1,4 @@
+
  <div class="background-profil">
   <div class="profile-card">
     <header>
@@ -16,7 +17,7 @@
     <br>
     <br>
     <div class="bookings">
-        <h2>My games</h2>
+        <h2>My games</h2> <button class="trigger">Click here to trigger the modal!</button>
           <%# if bookings.empty? = true %>
           <div class="booking-field">
             <br>
@@ -29,16 +30,50 @@
                           <i class="far fa-times-circle"> </i>
                         <% end %>
                     </li>
+                    <%# <div class="show-modal"> %>
+                    
+                    <%# </div> %>
                   </div>
                 </ul>
               <% end %>
           </div>
     </div>
 
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+        <h1>Historic</h1>
+          <div class="passed-games">
+            <ul>
+              <li><%= "match archivé 1" %></li>
+              <li><%= "match archivé 2" %></li>
+              <li><%= "match archivé 3" %></li>
+            </ul>
+          </div>
+          <br>
+          <div class="palmares">
+            <h1>Ranking</h1>
+            <br>
+              <div class="palmares-text">
+                <%= "#? games finished" %>
+                <%= "Congratulations" %>
+                <br>
+                <%= "You are a legend" %>
+              </div>
+              <div class="next-step">
+                <%= "You are at the ultimate step, what a player ! " %>
+              </div>
+          </div>
+    </div>
+  </div>
+
+
     <footer>
     </footer>
   </div>
 </div>
 
+
+    
 
 
