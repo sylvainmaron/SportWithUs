@@ -43,9 +43,7 @@ document.addEventListener('turbolinks:load', () => {
   initChatroomCable()
   initHammer(fetchingCard)
   initBtnAnimate()
-
   initializeClock()
-
   weatherFetch()
-
 });
+

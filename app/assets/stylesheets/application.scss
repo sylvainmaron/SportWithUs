@@ -18,15 +18,12 @@
 
 @import "components/card";
 
-html {
-    height: -webkit-fill-available;
-}
 
 body {
+    overflow: hidden;
     background-color: #2063ac;
-    min-height: -webkit-fill-available;
 }
-
+ 
 p, a, li, input, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
 }
