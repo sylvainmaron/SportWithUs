@@ -1,4 +1,5 @@
- <div class="background-profil"> 
+
+ <div class="background-profil">
   <div class="profile-card">
     <header>
     </header>
@@ -7,7 +8,7 @@
           <br>
           <h1>Ronaldinho</h1><h3>40 ans</h3>
         <div class="description">
-          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain 
+          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain
         </div>
     </div>
     <br>
@@ -16,26 +17,81 @@
     <br>
     <br>
     <div class="bookings">
-        <h2>My games</h2>
+        <h2>My games</h2> <button class="trigger">Click here to trigger the modal!</button>
+
           <%# if bookings.empty? = true %>
           <div class="booking-field">
             <br>
               <% current_user.bookings.each do |booking| %>
                 <ul>
+
                   <div class="booked">
-                    <li> 
+                    <li>
                       Reserved <%= booking.offer.title %> for <%= booking.status %>
+                      <%= link_to booking_path(booking), method: :delete do %>
+                          <i class="far fa-times-circle"> </i>
+                        <% end %>
+
                     </li>
+                    <%# <div class="show-modal"> %>
+                    
+                    <%# </div> %>
                   </div>
-                </ul> 
+                </ul>
               <% end %>
           </div>
     </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+            <h1>Historic</h1>
+            <br>
+              <div class="passed-games">
+                <% @old_bookings.each do |old_booking| %>
+                  <ul>
+                    <div class="game">
+                      <li><%=old_booking.offer.title%></li>
+                    </div>
+                  </ul>
+                <% end %>
+              </div>
+              
+              <div class="palmares">
+              <h1>Ranking</h1>
+              <div class="palmares-text">
+                <%= games = @old_bookings.count %><%= " games done" %>
+                <p><% case games
+                  when 1..3 %>
+                    Your a district player
+                  <% when 3..7 %>
+                    Your a semi-pro
+                  <% when 7..100 %>
+                    Your a legend, the master of the field!
+                <% end %></p>
+              </div>
+                <br>
+              <div class="next-step">
+                <% case games
+                 when 1..3 %>
+                    Go for more games !
+                  <% when 3..7 %>
+                    Congrats,  !
+                  <% when 7..100 %>
+                    Ultimate step, you are awesome
+                <% end %></p>
+              </div>
+          </div>
+    </div>
+  </div>
+
 
     <footer>
     </footer>
   </div>
 </div>
 
+
+    
 
 

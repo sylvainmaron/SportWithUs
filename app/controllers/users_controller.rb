@@ -4,6 +4,7 @@ class UsersController < ApplicationController
     @booked_offers = current_user.bookings
     @offers = current_user.offers
     @bookings_by_other_user = Booking.where(offer: @offers)
+    @old_bookings = Booking.joins(:offer).where("offers.play_time::date < ?", Date.today)
   end
 
   def new
@@ -13,7 +14,4 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
   end
-
-
-
 end

@@ -35,6 +35,8 @@ import { initBtnAnimate } from "./plugins/btn_animate";
 import { initializeClock } from "./plugins/timer";
 
 import { weatherFetch } from "../custom/weather_fetch"
+import { modalle } from "./plugins/modal"
+
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -45,5 +47,6 @@ document.addEventListener('turbolinks:load', () => {
   initBtnAnimate()
   initializeClock()
   weatherFetch()
+  modalle()
 });
 
