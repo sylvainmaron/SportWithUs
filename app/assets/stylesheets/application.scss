@@ -18,14 +18,18 @@
 
 @import "components/card";
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     background-color: #2063ac;
+    min-height: -webkit-fill-available;
 }
 
 p, a, li, input, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
 }
-
 
 .new-offer {
     display: flex;
@@ -35,4 +39,3 @@ p, a, li, input, h2, h3, h4 {
     width: 90%;
     height: calc(100vh - 70px);
 }
-
