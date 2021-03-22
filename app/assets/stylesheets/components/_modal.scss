@@ -9,6 +9,7 @@
   visibility: hidden;
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  display: flex;
 }
 
   .modal-content {
@@ -22,6 +23,7 @@
     border-radius: 0.5rem;
     height: 70vh;
     z-index: 1;
+    padding-top: 8px;
   }
 
   .close-button {
@@ -34,17 +36,19 @@
     background-color: lightgray;
   }
 
-  .show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-  }
+  // .show-modal {
+  //   opacity: 1;
+  //   visibility: visible;
+  //   transform: scale(1.0);
+  //   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  // }
 
   .passed-games {
     justify-content: center;
     font-size: 24px;
     border: 1px solid rgb(105, 255, 113);
+    height: 168px;
+    overflow: scroll;
   }
 
   li {
@@ -55,4 +59,13 @@
   .palmares-text {
     font-size: 24px;
     border-bottom: 1px solid green;
+  }
+
+  .palmares {
+    height: 168px;
+    margin-top: 24px;
+  }
+
+  .next-step {
+    
   }
