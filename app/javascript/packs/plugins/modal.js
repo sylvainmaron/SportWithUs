@@ -3,11 +3,11 @@ const modalle = () => {
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
+// const body = document.querySelector("body");
 
   function toggleModal() {
-    console.log(modal)  
-      modal.classList.toggle("modal");
-      console.log(modal)  
+    modal.classList.toggle("modal");
+    // body.style.backgroundColor = "black";
   }
 
 
