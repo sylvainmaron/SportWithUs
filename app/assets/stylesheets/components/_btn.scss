@@ -67,7 +67,7 @@ $gray: #bbbbbb;
 //   <button class="btn-animate"> Create  </button>
 
 .btn-classic {
-    width: 300px;
+    width: 250px;
     margin-bottom: 10px;
     letter-spacing: 2px;
     line-height: 40px;
@@ -91,14 +91,7 @@ $gray: #bbbbbb;
 }
 }
 
-.log-out {
-  border: none;
-  background-color: white;
-  &:active {
-    border: 2px solid $gray;
 
-}
-}
 .btn-ok {
   background: white;
   border-radius: 20px;
