@@ -27,38 +27,37 @@
                     -1px 1px 0 #51ee43,
                     1px -1px 0 #ffffff,
                     -1px -1px 0 #ffffff,
-                    0px 1px 0 #39ac2f,
-                    0px -1px 0 #ffffff,
+                    0px 1px 0 yellow,
+                    0px -1px 0 yellow,
                     -1px 0px 0 #51ee43,
-                    // 1px 0px 0 #ffffff,
-                    2px 2px 0 #39ac2f,
-                    -2px 2px 0 #ffffff,
-                    2px -2px 0 #39ac2f,
-                    -2px -2px 0 #39ac2f,
+                    1px 0px 0 yellow,
+                    2px 2px 0 yellow,
+                    -2px 2px 0 yellow,
+                    2px -2px 0 yellow,
+                    -2px -2px 0 yellow,
                     0px 2px 0 #51ee43,
-                    0px -2px 0 #39ac2f,
-                    -2px 0px 0 #ffffff,
-                    2px 0px 0 #39ac2f,
+                    0px -2px 0 yellow,
+                    -2px 0px 0 yellow,
+                    2px 0px 0 yellow,
                     1px 2px 0 #39ac2f,
                     -1px 2px 0 #39ac2f,
                     1px -2px 0 #39ac2f,
                     -1px -2px 0 #39ac2f,
                     2px 1px 0 #51ee43,
                     -2px 1px 0 #39ac2f,
-                    2px -1px 0 #39ac2f;
-                    // -2px -1px 0 #39ac2f;
+                    2px -1px 0 #39ac2f,
+                    -2px -1px 0 #39ac2f;
         // border: 3px solid white;
         // background: rgba(rgb(255, 255, 255), 0.5);
         // box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
-        padding: 20px;
+        padding: 30px;
     }
 .text-center {
     margin-top: 5px;
 }
 .text-container {
     margin-top: 20px;
-    padding: 9px;
-    text-align: center;
+    // padding: 9px;
 
 }
 i{
