@@ -6,20 +6,17 @@
     <div id="login-container">
         <div class="profile-img"></div>
           <br>
-          <h1>Ronaldinho</h1><h3>40 ans</h3>
+          <h1>Ronaldinho</h1>
         <div class="description">
           Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain
         </div>
     </div>
     <br>
-    <br>
     <%= link_to "Find a Game", offers_path, class: "btn-profil"%>
     <br>
     <br>
     <div class="bookings">
-        <h2>My games</h2> <button class="trigger">Click here to trigger the modal!</button>
-
-          <%# if bookings.empty? = true %>
+        <h2>My games</h2> <button class="trigger">See historic</button>
           <div class="booking-field">
             <br>
               <% current_user.bookings.each do |booking| %>
@@ -31,11 +28,7 @@
                       <%= link_to booking_path(booking), method: :delete do %>
                           <i class="far fa-times-circle"> </i>
                         <% end %>
-
                     </li>
-                    <%# <div class="show-modal"> %>
-                    
-                    <%# </div> %>
                   </div>
                 </ul>
               <% end %>
