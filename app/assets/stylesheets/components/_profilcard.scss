@@ -72,7 +72,8 @@
   .description {
     border: 1px ridge black;
     box-shadow:  5px 5px 5px rgba(#000000,0.2);
-    padding: 8px;
+    padding: 16px;
+    margin-top: 16px;
   }
 
   .bookings {
@@ -85,10 +86,10 @@
     color: white;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     height: 30px;
     padding: 0 20px;
-    margin-left: -32px;
+    margin-left: -10px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
@@ -112,4 +113,19 @@
         padding: 4px;
       }
     }
+  }
+
+  li {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .trigger {
+    background-color: #39ac2f;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: beige;
+    transition: ease-in-out .3s;
+    text-decoration: none;
   }
