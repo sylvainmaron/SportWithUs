@@ -1,0 +1,7 @@
+{
+  "theme_color": "red",
+  "background_color": "orange",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

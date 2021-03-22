@@ -1,3 +1,5 @@
+
+
 .home-container {
     // transform: translateY(40px);
 
@@ -6,11 +8,15 @@
     height: calc(100vh - 70px);
     padding: 30px;
     border-radius: 4px;
+}
 
-    // overflow: hidden;
-
+.home-cage{
+    height: 90px;
+    width: 400px;
+    transform: translateX(-40px);
+}
     .home-title {
-        height: 76px;
+        height: 90px;
         width: 100%;
         color: rgba(0, 0, 0, 0.800);
         // margin: 0 auto;
@@ -18,19 +24,19 @@
         text-shadow: 1px 1px 0 #ffffff,
                     -1px 1px 0 #51ee43,
                     1px -1px 0 #ffffff,
-                    -1px -1px 0 #39ac2f,
-                    0px 1px 0 #39ac2f,
-                    0px -1px 0 #39ac2f,
+                    -1px -1px 0 #ffffff,
+                    0px 1px 0 yellow,
+                    0px -1px 0 yellow,
                     -1px 0px 0 #51ee43,
-                    1px 0px 0 #39ac2f,
-                    2px 2px 0 #39ac2f,
-                    -2px 2px 0 #39ac2f,
-                    2px -2px 0 #39ac2f,
-                    -2px -2px 0 #39ac2f,
+                    1px 0px 0 yellow,
+                    2px 2px 0 yellow,
+                    -2px 2px 0 yellow,
+                    2px -2px 0 yellow,
+                    -2px -2px 0 yellow,
                     0px 2px 0 #51ee43,
-                    0px -2px 0 #39ac2f,
-                    -2px 0px 0 #39ac2f,
-                    2px 0px 0 #39ac2f,
+                    0px -2px 0 yellow,
+                    -2px 0px 0 yellow,
+                    2px 0px 0 yellow,
                     1px 2px 0 #39ac2f,
                     -1px 2px 0 #39ac2f,
                     1px -2px 0 #39ac2f,
@@ -39,25 +45,23 @@
                     -2px 1px 0 #39ac2f,
                     2px -1px 0 #39ac2f,
                     -2px -1px 0 #39ac2f;
-        border: 3px solid white;
-        background: rgba(rgb(255, 255, 255), 0.5);
-        box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
-        padding: 10px;
+        // border: 3px solid white;
+        // background: rgba(rgb(255, 255, 255), 0.5);
+        // box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
+        padding: 30px;
     }
-
+.text-center {
+    margin-top: 5px;
 }
-
 .text-container {
-    margin-top: 30px;
-    padding: 0px;
-    text-align: center;
+    padding-left: 0;
 }
 i{
     color: rgba(0, 0, 0, 0.800);
     background-color: rgba(rgb(255, 255, 255), 0.1);
 }
 .fa-futbol {
-    margin: -0.7px;
+    margin: -12px;
 }
 
 .show-container {
