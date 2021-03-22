@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   resources :offers do
-    resources :bookings
+    resources :bookings, only: [:create, :edit, :update, :new, :show, :index]
     resources :places
   end
+  resources :bookings, only: [:destroy]
 
   resources :chatrooms, only: %i[show create] do
     resources :messages, only: :create

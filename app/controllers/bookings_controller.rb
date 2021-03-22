@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_offer, only: %i[show create]
-  
+
   def create
     @booking = Booking.new(status: :play)
 
@@ -12,6 +12,12 @@ class BookingsController < ApplicationController
     else
       render offers_path
     end
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy
+    redirect_to user_path(current_user)
   end
 
   private

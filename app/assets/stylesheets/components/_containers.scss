@@ -3,7 +3,7 @@
 
     // margin: 0 auto;
     width: 100vw;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 70px);
     padding: 30px;
     border-radius: 4px;
 
@@ -13,7 +13,8 @@
         height: 76px;
         width: 100%;
         color: rgba(0, 0, 0, 0.800);
-        margin: 0 auto;
+        // margin: 0 auto;
+        margin-top: 30px;
         text-shadow: 1px 1px 0 #ffffff,
                     -1px 1px 0 #51ee43,
                     1px -1px 0 #ffffff,
@@ -38,16 +39,16 @@
                     -2px 1px 0 #39ac2f,
                     2px -1px 0 #39ac2f,
                     -2px -1px 0 #39ac2f;
-        border: 5px solid white;
-        background: rgba(rgb(255, 255, 255), 0.7);
+        border: 3px solid white;
+        background: rgba(rgb(255, 255, 255), 0.5);
         box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
-        padding-top: 10px;
+        padding: 10px;
     }
 
 }
 
 .text-container {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0px;
     text-align: center;
 }
@@ -61,7 +62,7 @@ i{
 
 .show-container {
     width: 100vw;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 70px);
     background-color: $green;
 }
 
