@@ -79,6 +79,33 @@ i{
     background-color: white;
     width: 100vw;
     height: calc(50vh - 70px);
+    .offer-title {
+        color: black;
+        text-shadow: 1px 1px 0 #ffffff,
+                    -1px 1px 0 #51ee43,
+                    1px -1px 0 #ffffff,
+                    -1px -1px 0 #ffffff,
+                    0px 1px 0 yellow,
+                    0px -1px 0 yellow,
+                    -1px 0px 0 #51ee43,
+                    1px 0px 0 yellow,
+                    2px 2px 0 yellow,
+                    -2px 2px 0 yellow,
+                    2px -2px 0 yellow,
+                    -2px -2px 0 yellow,
+                    0px 2px 0 #51ee43,
+                    0px -2px 0 yellow,
+                    -2px 0px 0 yellow,
+                    2px 0px 0 yellow,
+                    1px 2px 0 #39ac2f,
+                    -1px 2px 0 #39ac2f,
+                    1px -2px 0 #39ac2f,
+                    -1px -2px 0 #39ac2f,
+                    2px 1px 0 #51ee43,
+                    -2px 1px 0 #39ac2f,
+                    2px -1px 0 #39ac2f,
+                    -2px -1px 0 #39ac2f;
+    }
 }
 
 .box-btn {
@@ -87,5 +114,6 @@ i{
 
 .kick {
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
+
 }
