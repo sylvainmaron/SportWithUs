@@ -2,7 +2,7 @@ const modalle = () => {
 
 const modal = document.querySelector(".modal");
 if (modal) {
-    const trigger = document.querySelector(".trigger");
+    const trigg = document.querySelector(".trigger");
     const closeButton = document.querySelector(".close-button");
 
     function toggleModal() {
@@ -18,18 +18,9 @@ if (modal) {
         }
     }
 
-    trigger.addEventListener("click", toggleModal);
+    trigg.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
-
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
-// const body = document.querySelector("body");
-
-  function toggleModal() {
-    modal.classList.toggle("modal");
-    // body.style.backgroundColor = "black";
   }
 }
-
 export { modalle }
