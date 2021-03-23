@@ -15,7 +15,7 @@
           <%= current_user.description %>
         </div>
     </div>
-    <br>
+
     <%= link_to "Find a Game", offers_path, class: "btn-profil"%>
     <br>
     <br>
@@ -40,7 +40,11 @@
                 </ul>
               <% end %>
           </div>
+
+          <footer>
+    </footer>
     </div>
+    
 </div>
 
   <div class="modal">
@@ -48,11 +52,8 @@
     <div class="modal-content">
       <span class="close-button">&times;</span>
         <div class="historic">
-          <i class="far fa-futbol"></i></i>
-          <h1>Historic</h1>
-          <i class="far fa-futbol"></i></i>
+          <i class="far fa-futbol"></i><h1>Historic</h1><i class="far fa-futbol"></i>
         </div>
-            <br>
               <div class="passed-games">
                 <% @old_bookings.each do |old_booking| %>
                   <ul>
@@ -93,14 +94,5 @@
 
           </div>
     </div>
+  </div>    
   </div>
-   <footer>
-    </footer>  
-
-
-    
-  </div>
-
-    
-
-
