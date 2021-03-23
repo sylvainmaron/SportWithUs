@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 10px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 25px;
   color: #daf6ff;
@@ -11,17 +12,19 @@
 }
 
 #clockdiv > div{
+  width: 100px;
   padding: 10px;
-  border-radius: 3px;
   background: #0000004f;
   display: inline-block;
 }
 
 #clockdiv div > span{
+  display: inline-block;
+  width: 60px;
   padding: 15px;
+  text-align: center;
   border-radius: 3px;
   background: #0000005b;
-  display: inline-block;
 }
 
 .smalltext{
@@ -29,6 +32,6 @@
   font-size: 16px;
   color: #daf6ff;
   font-weight: 100;
-
+  text-align: center;
   text-shadow: 0 0 20px rgb(245, 49, 23),  0 0 20px rgba(255, 20, 20, 0.808);
 }

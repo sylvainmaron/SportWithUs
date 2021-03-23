@@ -72,9 +72,12 @@ i{
 .box-btn {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 80px;
     a {
-        margin-top: 20px;
         text-align: center;
+        width: 150px;
+        margin: 0;
     }
 }
 
@@ -93,7 +96,7 @@ i{
     background-color: white;
     flex-flow: column;
     text-align: center;
-    margin-top: 30px;
+    padding: 20px 0;
 }
 
 .weather h2 {
@@ -112,6 +115,10 @@ i{
     justify-content: space-around;
 }
 
-.temp-deg {
+.temp-deg1 {
+    text-align: start;
+}
+
+.temp-deg2 {
     text-align: start;
 }
