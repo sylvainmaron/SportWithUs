@@ -1,25 +1,21 @@
-.background-profil {
-  background-color: #39ac2f;
-  margin: 5px auto;
-}
-
 .profile-card {
   position: relative;
-  height: calc(100vh - 70px);
-  width: 98%;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
   margin: 0 auto;
   text-align: center;
   background-color: rgb(255, 255, 255);
 
   #login-container {
-  
+
   .nickname-age {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 20px 0 0 30%;
   }
-
- 
 
   .profile-img {
     height: 90px;
@@ -39,84 +35,41 @@
   }
 }
 
-  .btn-profil {
-    background-color: #39ac2f;
-    padding: 14px;
-    font-size: 22px;
-    border-radius: 8px;
-    color: beige;
-    transition: ease-in-out .3s;
-    text-decoration: none;
+.description {
+  border: 1px ridge black;
+  padding: 16px;
+  margin: 35px auto 0;
+  width: 95%;
+  height: auto;
 
-    &:active {
-      box-shadow: 0px 0px 0px 1.5px rgba(253, 253, 253, 0.5);
-      transform: scale(1);
-      background-color: beige;
-      color: #39ac2f;
-      border: 1px solid #39ac2f;
-    }
+  p {
+    text-align: center;
+    height: 100%;
+    white-space: normal;
   }
+}
+}
 
-  .description {
-    border: 1px ridge black;
-    padding: 16px;
-    margin: 55px auto 0;
-    width: 95%;
-    height: auto;
-
-    p {
-      text-align: center;
-      height: 100%;
-      white-space: normal;
-    }
+.onglets {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 20px;
+  color: rgba($color: #000000, $alpha: 0.4);
+  li {
+    margin-right: 20px;
   }
 }
 
-  .bookings {
-    justify-content: center;
-    margin: 0 auto;
+.active {
+  color: rgba($color: #000000, $alpha: 0.8);
+  text-decoration: underline #39ac2f;
+}
 
-    .booking-field {
-      height: 144px;
-      overflow: scroll;
-      margin: auto;
-      width: 90%;
-      margin-left: -6px;
-
-      .booked {
-        background-color: yellowgreen;
-        border-radius: 8px;
-        padding: 4px;
-      }
-    }
-    
-  }
-
-  li {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .trigger {
-    background-color: #39ac2f;
-    padding: 8px;
-    font-size: 22px;
-    border-radius: 8px;
-    color: beige;
-    transition: ease-in-out .3s;
-    text-decoration: none;
-  }
-
-  
-
-  .proficard-title {
-    display: flex;
-    justify-content: center;
-
-    .fa-star:before {
-      color: yellow;
-      padding: 14px;
-      font-size: 32px;
-    }
-  }
-
+.modal-bookings {
+  width: 100%;
+  background-color: blue;
+}
