@@ -15,9 +15,17 @@
         <li class="reviews-onglet">Reviews</li>
       </ul>
       <div class="modal-bookings">
-        <% @booked_offers.each do |booking| %>
-          <div class="booking-card">
-          </div>
+        <% current_user.bookings.each do |booking| %>
+          <ul>
+            <div class="booked">
+              <li>
+                Reserved <%= link_to booking.offer.title, offer_path(booking.offer) %> for <%= booking.status %>
+                <%= link_to booking_path(booking), method: :delete do %>
+                    <i class="far fa-times-circle"></i>
+                  <% end %>
+              </li>
+            </div>
+          </ul>
         <% end %>
       </div>
       <div class="modal-reviews">
