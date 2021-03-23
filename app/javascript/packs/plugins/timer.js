@@ -15,7 +15,6 @@ function getTimeRemaining(endtime) {
     const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
-
     return {
       total,
       days,
@@ -43,14 +42,9 @@ function getTimeRemaining(endtime) {
       clearInterval(timeinterval);
     }
   } 
-  
   function initializeClock() {
     if (!clock) return
 
-    
-  
-
-  
     updateClock();
     const timeinterval = setInterval(updateClock, 1000);
   }

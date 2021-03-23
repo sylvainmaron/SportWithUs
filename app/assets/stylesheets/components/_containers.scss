@@ -72,8 +72,10 @@ i{
 .box-btn {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
+    a {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 
 .kick {

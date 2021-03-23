@@ -5,7 +5,6 @@ const weatherFetch = () => {
       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data.coords.latitude}&lon=${data.coords.longitude}&units=metric&appid=e02bc9970df1fa9c02b6130b832dbec0`)
       .then(response => response.json())
       .then((data) => {
-        console.log(data)
         const apiData = data.weather[0];
         const display = ` <h2>Your local weather</h2>
           <p>${apiData.main} - ${apiData.description}</p>

@@ -47,5 +47,5 @@ document.addEventListener('turbolinks:load', () => {
   initBtnAnimate()
   initializeClock()
   weatherFetch()
-  // modalle()
+  modalle()
 });
