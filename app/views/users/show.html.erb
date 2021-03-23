@@ -5,10 +5,14 @@
     </header>
     <div id="login-container">
         <div class="profile-img"></div>
-          <br>
-          <h1>Ronaldinho</h1>
+          <div class="nickname-age">
+            <br>
+            <div class="nickname"><h1><%= current_user.nickname%></h1></div>
+            <div class="age"><h3><%= current_user.age %> ans</h3></div>
+          </div> 
+
         <div class="description">
-          Je suis un footballeur du Brésil, j'aime bien dribbler et m'amuser avec les adversaires sur le terrain
+          <%= current_user.description %>
         </div>
     </div>
     <br>
