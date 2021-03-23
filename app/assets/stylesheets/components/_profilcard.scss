@@ -58,8 +58,6 @@
   .profile-img {
     height: 90px;
     width: 90px;
-    background:
-    url(https://static.lpnt.fr/images/2018/01/17/12932167lpw-12941360-embed-libre-jpg_4921361.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -98,10 +96,9 @@
     box-shadow:  5px 5px 5px rgba(#000000,0.2);
     padding: 16px;
     margin-top: 24px;
+    overflow: hidden;
+    height: 16vh;
   }
-
-
-  
 }
 
   .bookings {
