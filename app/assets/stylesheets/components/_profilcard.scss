@@ -1,58 +1,22 @@
 .background-profil {
-  background-image: url(https://images.unsplash.com/photo-1565308674684-1d8c0b4433d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
-  background-position: left 50% bottom 100%;
-  height: calc(100vh - 70px);
+  background-color: #39ac2f;
+  margin: 5px auto;
 }
 
 .profile-card {
-  transform: translateY(32px);
   position: relative;
-  // z-index: 1;
+  height: calc(100vh - 70px);
+  width: 98%;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 16px;
-  width: 94%;
-  height: 90%;
-  border: 12px solid #39ac2f;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: rgb(255, 255, 255);
 
-  header {
-    display: flex;
-    background-color: #39ac2f;
-    width: 98%;
-    position: absolute;
-    top: -3px;
-    height: 20px;
-    padding: 0 20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-   }
-
   #login-container {
-    height: 28vh;
-
-
+  
   .nickname-age {
     display: flex;
-    margin-top: 24px;
     justify-content: center;
-    width: 54vh;
-    overflow: hidden;
-
-    .nickname {
-      margin-right: 48px;
-      position: absolute;
-    }
-
-    .age {
-      margin-left: 8px;
-      position: absolute;
-      right: 8px;
-      top: 40px;
-    }
+    align-content: center;
   }
 
  
@@ -63,8 +27,8 @@
     background-size: cover;
     background-position: center;
     position: absolute;
-    top: -25px;
-    left: -5px;
+    top: 5px;
+    left: 5px;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 
@@ -95,16 +59,14 @@
 
   .description {
     border: 1px ridge black;
-    box-shadow:  5px 5px 5px rgba(#000000,0.2);
     padding: 16px;
-    margin-top: 24px;
-    height: 60%;
-    // margin-left: 1px;
+    margin: 55px auto 0;
+    width: 95%;
+    height: auto;
 
     p {
       text-align: center;
       height: 100%;
-      overflow: hidden;
       white-space: normal;
     }
   }
@@ -113,7 +75,6 @@
   .bookings {
     justify-content: center;
     margin: 0 auto;
-    border-top: 2px groove rgba(156, 140, 140, 0.349);
 
     .booking-field {
       height: 144px;
@@ -129,19 +90,6 @@
       }
     }
     
-    footer {
-    display: flex;
-    background: #39ac2f;
-    color: white;
-    width: 100%;
-    position: absolute;
-    bottom: -8px;
-    height: 30px;
-    padding: 0 20px;
-    margin-left: -10px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    }
   }
 
   li {
