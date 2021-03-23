@@ -32,6 +32,29 @@
     border-top-right-radius: 8px;
    }
 
+  #login-container {
+    height: 28vh;
+
+
+  .nickname-age {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+
+    .nickname {
+      margin-right: 8px;
+      position: absolute;
+    }
+
+    .age {
+      margin-left: 8px;
+      position: absolute;
+      right: 8px;
+    }
+  }
+
+ 
+
   .profile-img {
     height: 90px;
     width: 90px;
@@ -50,6 +73,7 @@
       transition: transform 500ms ease-in-out;
     }
   }
+}
 
   .btn-profil {
     background-color: #39ac2f;
@@ -128,8 +152,9 @@
     color: beige;
     transition: ease-in-out .3s;
     text-decoration: none;
-    border: 1px solid white ;
   }
+
+  
 
   .proficard-title {
     display: flex;
@@ -141,3 +166,4 @@
       font-size: 32px;
     }
   }
+
