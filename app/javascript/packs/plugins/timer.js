@@ -1,12 +1,20 @@
+const clock = document.querySelector("#clockdiv")
+function parseDate(date) {
+  const parsed = Date.parse(date);
+  if (!isNaN(parsed)) {
+    return parsed;
+  }
 
+  return Date.parse(date.replace(/-/g, '/').replace(/[a-z]+/gi, ' '));
+}
 
-function getTimeRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
+function getTimeRemaining(endtime) {  
+    const total = parseDate(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
     const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    
+
     return {
       total,
       days,
@@ -15,31 +23,28 @@ function getTimeRemaining(endtime) {
       seconds
     };
   }
-  
-  function initializeClock() {
-    const clock = document.querySelector("#clockdiv")
-    if (!clock) return
-    console.log(clock)
-    const endtime = clock.dataset.dateTime
+
+  function updateClock() {
+
     const daysSpan = clock.querySelector('.days');
     const hoursSpan = clock.querySelector('.hours');
     const minutesSpan = clock.querySelector('.minutes');
     const secondsSpan = clock.querySelector('.seconds');
     
-  
-    function updateClock() {
-      const t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
+    const endtime = clock.dataset.dateTime
+    const t = getTimeRemaining(endtime);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = t.hours;
+    minutesSpan.innerHTML = t.minutes;
+    secondsSpan.innerHTML = t.seconds;
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
     }
-  
+  } 
+  function initializeClock() {
+    if (!clock) return
+
     updateClock();
     const timeinterval = setInterval(updateClock, 1000);
   }

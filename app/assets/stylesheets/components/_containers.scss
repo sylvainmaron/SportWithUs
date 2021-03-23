@@ -1,9 +1,5 @@
-
-
 .home-container {
-    // transform: translateY(40px);
-
-    // margin: 0 auto;
+    margin: 0 auto;
     width: 100vw;
     height: calc(100vh - 70px);
     padding: 30px;
@@ -15,45 +11,42 @@
     width: 400px;
     transform: translateX(-40px);
 }
-    .home-title {
-        height: 90px;
-        width: 100%;
-        color: rgba(0, 0, 0, 0.800);
-        // margin: 0 auto;
-        margin-top: 30px;
-        text-shadow: 1px 1px 0 #ffffff,
-                    -1px 1px 0 #51ee43,
-                    1px -1px 0 #ffffff,
-                    -1px -1px 0 #ffffff,
-                    0px 1px 0 yellow,
-                    0px -1px 0 yellow,
-                    -1px 0px 0 #51ee43,
-                    1px 0px 0 yellow,
-                    2px 2px 0 yellow,
-                    -2px 2px 0 yellow,
-                    2px -2px 0 yellow,
-                    -2px -2px 0 yellow,
-                    0px 2px 0 #51ee43,
-                    0px -2px 0 yellow,
-                    -2px 0px 0 yellow,
-                    2px 0px 0 yellow,
-                    1px 2px 0 #39ac2f,
-                    -1px 2px 0 #39ac2f,
-                    1px -2px 0 #39ac2f,
-                    -1px -2px 0 #39ac2f,
-                    2px 1px 0 #51ee43,
-                    -2px 1px 0 #39ac2f,
-                    2px -1px 0 #39ac2f,
-                    -2px -1px 0 #39ac2f;
-        // border: 3px solid white;
-        // background: rgba(rgb(255, 255, 255), 0.5);
-        // box-shadow:  5px 5px 5px rgba(#ffffff,0.2);
-        padding: 30px;
-    }
+.home-title {
+    height: 90px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.800);
+    margin-top: 30px;
+    text-shadow: 1px 1px 0 #ffffff,
+                -1px 1px 0 #51ee43,
+                1px -1px 0 #ffffff,
+                -1px -1px 0 #ffffff,
+                0px 1px 0 yellow,
+                0px -1px 0 yellow,
+                -1px 0px 0 #51ee43,
+                1px 0px 0 yellow,
+                2px 2px 0 yellow,
+                -2px 2px 0 yellow,
+                2px -2px 0 yellow,
+                -2px -2px 0 yellow,
+                0px 2px 0 #51ee43,
+                0px -2px 0 yellow,
+                -2px 0px 0 yellow,
+                2px 0px 0 yellow,
+                1px 2px 0 #39ac2f,
+                -1px 2px 0 #39ac2f,
+                1px -2px 0 #39ac2f,
+                -1px -2px 0 #39ac2f,
+                2px 1px 0 #51ee43,
+                -2px 1px 0 #39ac2f,
+                2px -1px 0 #39ac2f,
+                -2px -1px 0 #39ac2f;
+    padding: 30px;
+}
 .text-center {
     margin-top: 5px;
 }
 .text-container {
+    text-align: center;
     padding-left: 0;
 }
 i{
@@ -71,16 +64,61 @@ i{
 }
 
 .mini-show {
+    text-align: center;
     background-color: white;
     width: 100vw;
-    height: calc(50vh - 70px);
 }
 
 .box-btn {
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    a {
+        text-align: center;
+        width: 150px;
+        margin: 0;
+    }
 }
 
 .kick {
+    text-align: center;
     color: white;
+    font-weight: bold;
     margin-top: 10px;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    flex-flow: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.weather h2 {
+     font-size: 2rem;
+     font-weight: bold;
+}
+
+.weather-celsius {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.weather-temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.temp-deg1 {
+    text-align: start;
+}
+
+.temp-deg2 {
+    text-align: start;
 }

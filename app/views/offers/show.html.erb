@@ -1,9 +1,7 @@
 <div class= "show-container">
 <div class= "mini-show">
 <h2><%= @offer.title %></h2>
-  <p><%= "The game will be held on: " "#{@offer.play_time}" %></p>
-  <p><%= "#{@offer.min_players}"" Players needed" %></p>
-
+<p><%= "#{@offer.min_players}"" Players needed" %></p>
 </div>
 <h2 class="kick">Kick-off in </h2>
 <div id="clockdiv" data-date-time="<%= @offer.play_time %>">
@@ -24,7 +22,7 @@
     <div class="smalltext">Seconds</div>
   </div>
 </div>
-
+<div class="weather"></div>
 <div class="box-btn">
   <%= link_to "More games", offers_path, class: "btn-ok"%>
   <%= link_to "Chat", chatroom_path(@offer.chatroom_id), class: "btn-ok" %>

@@ -23,7 +23,6 @@
       <ul class="tapbar-items">
         <li class="tapbar-item"><%= link_to root_path do %><i class="fas fa-home"></i><% end %></li>
         <li class="tapbar-item"><%= link_to offers_path do %><i class="fas fa-images"></i><% end %></li>
-        <li class="tapbar-item"><%= link_to offers_path do %><i class="fas fa-book"></i><% end %></li>
         <% if user_signed_in?  %>
           <li class="tapbar-item"><%= link_to user_path(current_user) do %><i class="fas fa-id-card"></i><% end %></li>
         <% else %>
