@@ -1,4 +1,5 @@
-const clock = document.querySelector("#clockdiv")
+let clock;
+
 function parseDate(date) {
   const parsed = Date.parse(date);
   if (!isNaN(parsed)) {
@@ -43,10 +44,12 @@ function getTimeRemaining(endtime) {
     }
   } 
   function initializeClock() {
+    clock = document.querySelector("#clockdiv")
+    if (clock) {
+      updateClock();
+      const timeinterval = setInterval(updateClock, 1000);
+    }
     if (!clock) return
-
-    updateClock();
-    const timeinterval = setInterval(updateClock, 1000);
   }
 
 export { initializeClock }
