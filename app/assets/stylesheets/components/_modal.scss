@@ -58,10 +58,10 @@
       margin-left: -32px;
       margin-top: 16px;
     }
-  
+
     ul {
       width: 100%;
-  
+
     }
   }
 
@@ -70,13 +70,21 @@
     white-space: nowrap;
   }
 
-  
+
   .palmares-text {
     font-size: 24px;
     border-bottom: 1px solid #39ac2f;
 
     p {
-      font-size: 32px;
+      font-size: 30px;
+      color: #2063ac;
+      text-shadow: rgb(102, 255, 0) 1px 0 10px;
+      // background-color: rgba(250, 238, 76, 0.726);
+      // color: white;
+      // text-shadow: rgb(0, 68, 255) 1px 0 10px;
+      // text-shadow: rgb(0, 68, 255) 2px 0 10px;
+
+      border-radius: 8px;
     }
   }
 
@@ -87,8 +95,10 @@
   }
 
   .next-step {
-    font-size: 24px;        
-  }
+    font-size: 20px;
+    // color:rgb(176, 255, 124);
+    // text-shadow: rgb(102, 255, 0) 1px 0 10px;
+    }
 
   .title {
     display: flex;
@@ -107,7 +117,10 @@
   }
 
   .historic {
-    display: flex;
+    // display: flex;
+    color: white;
+    border-radius: 8px;
+    background-color: #2063ac;
     justify-content: center;
   }
 
