@@ -11,9 +11,9 @@
   margin: 0 auto;
   padding: 10px;
   border-radius: 16px;
-  // width: 380px;
-  // height: 560px;
-  border: 5px solid #39ac2f;
+  width: 94%;
+  height: 90%;
+  border: 12px solid #39ac2f;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -22,9 +22,9 @@
   header {
     display: flex;
     background-color: #39ac2f;
-    width: 100vh;
+    width: 98%;
     position: absolute;
-    top: 0;
+    top: -3px;
     height: 20px;
     padding: 0 20px;
     border-top-left-radius: 8px;
@@ -39,9 +39,11 @@
     display: flex;
     margin-top: 24px;
     justify-content: center;
+    width: 54vh;
+    overflow: hidden;
 
     .nickname {
-      margin-right: 8px;
+      margin-right: 48px;
       position: absolute;
     }
 
@@ -96,8 +98,15 @@
     box-shadow:  5px 5px 5px rgba(#000000,0.2);
     padding: 16px;
     margin-top: 24px;
-    overflow: hidden;
-    height: 16vh;
+    height: 60%;
+    // margin-left: 1px;
+
+    p {
+      text-align: center;
+      height: 100%;
+      overflow: hidden;
+      white-space: normal;
+    }
   }
 }
 
@@ -124,9 +133,9 @@
     display: flex;
     background: #39ac2f;
     color: white;
-    width: 100vh;
+    width: 100%;
     position: absolute;
-    bottom: -3px;
+    bottom: -8px;
     height: 30px;
     padding: 0 20px;
     margin-left: -10px;
