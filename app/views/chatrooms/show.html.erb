@@ -5,13 +5,15 @@
       </div>
         <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
           <% @chatroom.messages.each do |message| %>
-            <div class="all-messages">
+            <div class="all-messages <%= 'text-right' if message.user == current_user %>">
               <div class="message-container" id="message-<%= message.id %>">
+                <%= message.content.strip %>
+              </div>
+              <div>
                 <i class="author">
-                  <span><%= message.user.nickname %></span>
-                  <small><%= message.created_at.strftime("%b %e , %l:%M%p") %></small>
+                  <span id="name"><%= message.user.nickname %></span>
+                  <small><span id="date"><%= message.created_at.strftime("%b %e , %l:%M%p") %></small></span>
                 </i>
-                <p><%= message.content %></p>
               </div>
             </div>
           <% end %>
