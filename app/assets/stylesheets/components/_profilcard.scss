@@ -55,7 +55,7 @@
     }
   }
 
- 
+
 
   .profile-img {
     height: 90px;
@@ -94,8 +94,8 @@
   }
 
   .description {
-    border: 1px ridge black;
-    box-shadow:  5px 5px 5px rgba(#000000,0.2);
+    border: 0.5px solid rgb(58, 58, 58);
+    box-shadow:  5px 5px 5px rgba(#3b3b3b,0.2);
     padding: 16px;
     margin-top: 24px;
     height: 60%;
@@ -128,7 +128,7 @@
         padding: 4px;
       }
     }
-    
+
     footer {
     display: flex;
     background: #39ac2f;
@@ -159,7 +159,7 @@
     text-decoration: none;
   }
 
-  
+
 
   .proficard-title {
     display: flex;
