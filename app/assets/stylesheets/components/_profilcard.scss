@@ -7,6 +7,7 @@
 .profile-card {
   transform: translateY(32px);
   position: relative;
+  // z-index: 1;
   margin: 0 auto;
   padding: 10px;
   border-radius: 16px;
@@ -77,7 +78,7 @@
   .btn-profil {
     background-color: #39ac2f;
     padding: 14px;
-    font-size: 16px;
+    font-size: 22px;
     border-radius: 8px;
     color: beige;
     transition: ease-in-out .3s;
@@ -145,8 +146,8 @@
 
   .trigger {
     background-color: #39ac2f;
-    padding: 12px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 22px;
     border-radius: 8px;
     color: beige;
     transition: ease-in-out .3s;
@@ -154,3 +155,15 @@
   }
 
   
+
+  .proficard-title {
+    display: flex;
+    justify-content: center;
+
+    .fa-star:before {
+      color: yellow;
+      padding: 14px;
+      font-size: 32px;
+    }
+  }
+
