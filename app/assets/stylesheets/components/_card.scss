@@ -1,5 +1,6 @@
 .cards-container {
     position: relative;
+    z-index: 1;
     top: 0px;
     bottom: 70px;
     height: calc(100vh - 70px);

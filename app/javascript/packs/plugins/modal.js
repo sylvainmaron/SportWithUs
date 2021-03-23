@@ -21,6 +21,14 @@ if (modal) {
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+// const body = document.querySelector("body");
+
+  function toggleModal() {
+    modal.classList.toggle("modal");
+    // body.style.backgroundColor = "black";
   }
 }
 
