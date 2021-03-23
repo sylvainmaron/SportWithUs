@@ -22,12 +22,11 @@
   header {
     display: flex;
     background-color: #39ac2f;
-    width: 360px;
+    width: 100vh;
     position: absolute;
     top: 0;
     height: 20px;
     padding: 0 20px;
-    // margin-left: -32px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
    }
@@ -50,6 +49,7 @@
       margin-left: 8px;
       position: absolute;
       right: 8px;
+      top: 40px;
     }
   }
 
@@ -58,8 +58,6 @@
   .profile-img {
     height: 90px;
     width: 90px;
-    background:
-    url(https://static.lpnt.fr/images/2018/01/17/12932167lpw-12941360-embed-libre-jpg_4921361.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -97,32 +95,16 @@
     border: 1px ridge black;
     box-shadow:  5px 5px 5px rgba(#000000,0.2);
     padding: 16px;
-    margin-top: 16px;
-  }
-
-  .bookings {
-    border-top: 2px groove rgba(156, 140, 140, 0.349);
-  }
-
-  footer {
-    display: flex;
-    background: #39ac2f;
-    color: white;
-    width: 100%;
-    position: absolute;
-    bottom: -3px;
-    height: 30px;
-    padding: 0 20px;
-    margin-left: -10px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    margin-top: 24px;
+    overflow: hidden;
+    height: 16vh;
   }
 }
 
   .bookings {
     justify-content: center;
     margin: 0 auto;
-
+    border-top: 2px groove rgba(156, 140, 140, 0.349);
 
     .booking-field {
       height: 144px;
@@ -136,6 +118,20 @@
         border-radius: 8px;
         padding: 4px;
       }
+    }
+    
+    footer {
+    display: flex;
+    background: #39ac2f;
+    color: white;
+    width: 100vh;
+    position: absolute;
+    bottom: -3px;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: -10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     }
   }
 
