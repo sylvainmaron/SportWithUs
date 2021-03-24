@@ -23,7 +23,7 @@
                    <%= l(booking.offer.play_time, format: :short) %>
                 </div>
                 <li>
-                  Reserved <%= booking.offer.title %> for <%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
+                  <%= booking.offer.title %><%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
                   <%= link_to booking_path(booking), method: :delete, class: "profile-delete-btn" do %>
                       <i class="far fa-times-circle"></i>
                     <% end %>
@@ -35,7 +35,10 @@
         <div class="modal-reviews">
           <% current_user.bookings.each do |booking| %>
             <ul>
-              <div class="passed-games">
+              <div class="passed-games booked">
+              <div class="avatar">     
+                   <%= l(booking.offer.play_time, format: :short) %>
+                </div>
                 <% @old_bookings.each do |old_booking| %>
                   <ul>
                     <div class="game">

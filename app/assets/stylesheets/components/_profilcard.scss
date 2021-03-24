@@ -116,9 +116,19 @@
   width: 90%;
   margin: 0 auto 10px;
   height: 100px;
+  li {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-left: 10px;
+  }
 }
 
 .avatar {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  font-weight: bold;
   background-color:#39ac2f;
   border-radius: 8px;
   opacity: 0.8;
@@ -126,6 +136,11 @@
   width: 100px;
   margin: auto 0;
   color: white;
+}
+
+.passed-games > .avatar {
+  background-color:#e74c3c;
+  opacity: 1;
 }
 
 .profile-play-btn {
@@ -142,6 +157,7 @@
 
 .profile-delete-btn {
   position: absolute;
+  font-size: 20px;
   right: 5px;
-  top: 5px;
+  top: 2px;
 }
