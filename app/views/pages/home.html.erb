@@ -8,16 +8,16 @@
   <br>
 
   <% if user_signed_in? %>
+  <br>
+  <br>
+
+        <li class="landing-text">
+          <h2>Make it to the next level !</h2>
+        </li>
+        <br>
         <li><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></li>
         <br>
-        <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
-        <br>
-        <li><%= link_to "My profile", user_path(current_user), class: "btn btn-classic" %></li>
-        <br>
-        </li>
-        <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-classic" %></li>
-        <br>
-        </li>
+    
 
         <% else %>
           <li class="nav-item">
