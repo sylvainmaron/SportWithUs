@@ -6,6 +6,7 @@
             <h2><%= current_user.nickname%></h2>
             <h2 class="profile-age"><%= current_user.age %> years old</h2>
           </div>
+          <%= link_to "Log Out",  destroy_user_session_path, method: :delete, class: "profile-logout" %>
           <div class="description">
             <p><%= current_user.description %></p>
           </div>
