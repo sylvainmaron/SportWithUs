@@ -17,38 +17,38 @@
       <div class="main-modal">
         <div class="modal-bookings">
           <% current_user.bookings.each do |booking| %>
-            <ul>
-              <div class="booked">
-                <div class="avatar">     
-                   <%= l(booking.offer.play_time, format: :short) %>
+            <% if booking.offer.play_time > Date.today %>
+              <ul>
+                <div class="booked">
+                  <div class="avatar">     
+                    <%= l(booking.offer.play_time, format: :short) %>
+                  </div>
+                  <li>
+                    <%= booking.offer.title %><%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
+                    <%= link_to booking_path(booking), method: :delete, class: "profile-delete-btn" do %>
+                        <i class="far fa-times-circle"></i>
+                      <% end %>
+                  </li>
                 </div>
-                <li>
-                  <%= booking.offer.title %><%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
-                  <%= link_to booking_path(booking), method: :delete, class: "profile-delete-btn" do %>
-                      <i class="far fa-times-circle"></i>
-                    <% end %>
-                </li>
-              </div>
-            </ul>
+              </ul>
+            <% end %>
           <% end %>
         </div>
         <div class="modal-reviews">
-          <% current_user.bookings.each do |booking| %>
-            <ul>
-              <div class="passed-games booked">
-              <div class="avatar">     
-                   <%= l(booking.offer.play_time, format: :short) %>
-                </div>
-                <% @old_bookings.each do |old_booking| %>
-                  <ul>
-                    <div class="game">
-                      <li><%=old_booking.offer.title%></li>
+              <% @old_bookings.each do |old_booking| %>
+                <ul>
+                  <div class="passed-games booked">
+                    <div class="avatar">
+                      <%= l(old_booking.offer.play_time, format: :short) %>    
                     </div>
-                  </ul>
-                <% end %>
-              </div>
-            </ul>
-          <% end %>
+                    <ul>
+                      <div class="game">
+                        <li><%=old_booking.offer.title%></li>
+                      </div>
+                    </ul>
+                  </div>
+                </ul>
+              <% end %>
         </div>
       </div>
     </div>
