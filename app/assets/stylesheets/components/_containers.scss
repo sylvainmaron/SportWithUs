@@ -97,6 +97,12 @@ i{
     flex-flow: column;
     text-align: center;
     padding: 20px 0;
+    p {
+        margin: 0;
+    }
+    hr {
+        margin: 5px auto;
+    }
 }
 
 .weather h2 {
@@ -107,6 +113,7 @@ i{
 .weather-celsius {
     font-size: 28px;
     font-weight: bold;
+    margin: 0;
 }
 
 .weather-temp {
