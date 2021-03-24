@@ -8,7 +8,12 @@ class OffersController < ApplicationController
       "https://images.pexels.com/photos/6078297/pexels-photo-6078297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "https://images.pexels.com/photos/4785491/pexels-photo-4785491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "https://images.pexels.com/photos/6507965/pexels-photo-6507965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "https://images.pexels.com/photos/1311619/pexels-photo-1311619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "https://images.pexels.com/photos/1311619/pexels-photo-1311619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/5553079/pexels-photo-5553079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/6077790/pexels-photo-6077790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/264384/pexels-photo-264384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/3041176/pexels-photo-3041176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/4785494/pexels-photo-4785494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     ]
   end
 

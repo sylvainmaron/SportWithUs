@@ -34,8 +34,9 @@ import { initBtnAnimate } from "./plugins/btn_animate";
 
 import { initializeClock } from "./plugins/timer";
 
-import { weatherFetch } from "../custom/weather_fetch"
-import { modalle } from "./plugins/modal"
+import { weatherFetch } from "../custom/weather_fetch";
+import { modalle } from "./plugins/modal";
+import { helpSvg } from "../custom/help_svg";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -46,25 +47,5 @@ document.addEventListener('turbolinks:load', () => {
   initializeClock()
   weatherFetch()
   modalle()
+  helpSvg()
 });
-
-// let action = false
-// document.addEventListener("touchstart", () => {console.log(action); action = true; console.log(action);});
-// const set = setTimeout(() => { console.log(action)}, 3000);
-
-const svg = document.querySelector(".swipe-svg");
-const detected = () => {
-  if (true) {
-    svg.style.display = "none"
-  }
-  const set = setTimeout(display, 5000);
-}
-
-const display = () => {
-  svg.style.display = "block"
-}
-
-if (svg) {
-  const set = setTimeout(display, 3000);
-  document.addEventListener("touchstart", detected);
-}
