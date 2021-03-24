@@ -14,7 +14,11 @@
     <div class="both-counters">
       <div class="game-counter">
         <h4><%= current_user.offers.count %></h4>
-        <p> available games</p></div>
+          <p> available games</p></div>
+      <div class="current-booking">
+        <h4><%= current_user.bookings.count %></h4>
+          <p> games booked, be ready !</p>
+      </div>
     </div>
     
       <br>
