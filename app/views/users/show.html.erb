@@ -3,8 +3,8 @@
     <div id="login-container">
         <div class="profile-img" style="background-image: url(<%= cl_image_path current_user.photo.key %>)"></div>
           <div class="nickname-age">
-            <h1><%= current_user.nickname%></h1>
-            <h3><%= current_user.age %> ans</h3>
+            <h2><%= current_user.nickname%></h2>
+            <h2 class="profile-age"><%= current_user.age %> years old</h2>
           </div>
           <div class="description">
             <p><%= current_user.description %></p>
@@ -15,13 +15,16 @@
         <li class="reviews-onglet">Reviews</li>
       </ul>
       <div class="main-modal">
-        <div class="modal-bookings siblings">
+        <div class="modal-bookings">
           <% current_user.bookings.each do |booking| %>
             <ul>
               <div class="booked">
+                <div class="avatar">     
+                   <%= l(booking.offer.play_time, format: :short) %>
+                </div>
                 <li>
-                  Reserved <%= link_to booking.offer.title, offer_path(booking.offer) %> for <%= booking.status %>
-                  <%= link_to booking_path(booking), method: :delete do %>
+                  Reserved <%= booking.offer.title %> for <%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
+                  <%= link_to booking_path(booking), method: :delete, class: "profile-delete-btn" do %>
                       <i class="far fa-times-circle"></i>
                     <% end %>
                 </li>
@@ -29,16 +32,17 @@
             </ul>
           <% end %>
         </div>
-        <div class="modal-reviews siblings">
+        <div class="modal-reviews">
           <% current_user.bookings.each do |booking| %>
             <ul>
-              <div class="booked">
-                <li>
-                  Reserved <%= link_to booking.offer.title, offer_path(booking.offer) %> for <%= booking.status %>
-                  <%= link_to booking_path(booking), method: :delete do %>
-                      <i class="far fa-times-circle"></i>
-                    <% end %>
-                </li>
+              <div class="passed-games">
+                <% @old_bookings.each do |old_booking| %>
+                  <ul>
+                    <div class="game">
+                      <li><%=old_booking.offer.title%></li>
+                    </div>
+                  </ul>
+                <% end %>
               </div>
             </ul>
           <% end %>
