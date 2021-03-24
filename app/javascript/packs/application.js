@@ -49,3 +49,5 @@ document.addEventListener('turbolinks:load', () => {
   weatherFetch()
   modalle()
 });
+
+
