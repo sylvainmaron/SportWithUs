@@ -51,20 +51,19 @@
 }
 
   .both-counters {
-    height: 160px;
+    height: 240px;
     width: 100%;
     
 
     .game-counter {
-      font-size: 24px;
       color: white;
-      background: #2063ac;
-      transition: ease-in-out .1s;
-      border-radius: 20px;
+      background: #061321;
+      border-radius: 80px;
       border: 3px outset #587ea7;
       font-weight: bolder;
       box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
-      
+      margin-left: 50px;
+      margin-bottom: 16px;
         p {
           font-size: 24px;
         }
@@ -75,14 +74,14 @@
       }
       
       .current-booking {
-        font-size: 24px;
         color: white;
-        background: #2063ac;
-        transition: ease-in-out .1s;
-        border-radius: 20px;
+        background: #061321;
+        border-radius: 80px;
         border: 3px outset #587ea7;
         font-weight: bolder;
         box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
+        margin-right: 50px;
+        margin-bottom: 16px;
 
         p {
           font-size: 24px;
