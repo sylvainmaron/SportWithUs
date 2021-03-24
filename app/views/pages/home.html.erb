@@ -4,28 +4,32 @@
   <div class="home-title">
   <h1 class="text-center"> SP<i class="fa fa-futbol regular"></i>RT WITH US</span></h1></div>
   </div>
-  <ul class="text-container">
+  <div class="text-container">
   <br>
 
   <% if user_signed_in? %>
-  <br>
-  <br>
-
-        <li class="landing-text">
-          <h2>Make it to the next level !</h2>
-        </li>
-        <br>
-        <li><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></li>
-        <br>
+    <br>
+    <br>
+    <br>
+    <div class="both-counters">
+      <div class="game-counter">
+        <h4><%= current_user.offers.count %></h4>
+        <p> available games</p></div>
+    </div>
+    
+      <br>
+      <br>
+    <div><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></div>
+      <br>
     
 
         <% else %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "btn btn-classic" %>
-          </li>
+          </div>
         <% end %>
 
 
-  </ul>
+  </div>
   </div>
 </div>

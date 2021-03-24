@@ -49,6 +49,33 @@
     text-align: center;
     padding-left: 0;
 }
+
+  .both-counters {
+    height: 160px;
+    width: 100%;
+    
+
+    .game-counter {
+      font-size: 24px;
+      color: white;
+      background: #2063ac;
+      transition: ease-in-out .1s;
+      border-radius: 20px;
+      border: 3px outset #587ea7;
+      font-weight: bolder;
+      box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
+      
+        p {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 40px;
+        }
+    }
+  }
+
+
 i{
     color: rgba(0, 0, 0, 0.800);
     background-color: rgba(rgb(255, 255, 255), 0.1);
@@ -121,12 +148,4 @@ i{
 
 .temp-deg2 {
     text-align: start;
-}
-
-.landing-text {
-
-    h2 {
-        font-size: 24px;
-        color: white;
-    }
 }
