@@ -1,11 +1,11 @@
 <div class="cards-container">
+  <div class="swipe-svg" style="background-image: url(<%= image_path('swipe_svg.svg') %>); background-position: center; background-size: cover"></div>
   <% @offers.each do |offer| %>
     <div class="card" data-offer-id="<%= offer.id %>" data-user-id="<%= current_user.id %>" style="background-image: url( <%= @img.sample %>); background-size: cover; background-position: center;">
       <div class="opac">
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
       </div>
-
       <div class="time-offer">
             <h3> <%= l(offer.play_time, format: :short) %> </h3></div>
         <div class="card-text">

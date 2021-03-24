@@ -25,16 +25,16 @@
 }
 
 .time-offer {
+  display: flex;
+  justify-content: center;
   background-color: #ffffff8c;
   padding: 8px;
-  width: 56%;
+  width: 50%;
   border-radius: 24px;
-  display: flex;
-  align-self: center;
-  margin-top: 4%;
-
+  margin: 4% auto 0;
   h3 {
     font-size: 34px;
+    text-align: center;
   }
 }
 
@@ -123,15 +123,39 @@
 }
 
 .card--match {
-    transition: 0.4s;
-    transform:translateX(1500px) translateY(600px) rotate(90deg);
-  }
+  transition: 0.4s;
+  transform:translateX(1500px) translateY(600px) rotate(90deg);
+}
 
-  .card--next {
-    transition: 0.4s;
-    transform:translateX(-1500px) translateY(600px) rotate(-90deg);
-  }
+.card--next {
+  transition: 0.4s;
+  transform:translateX(-1500px) translateY(600px) rotate(-90deg);
+}
 
-  .card--back {
-    transition:0.4s;
+.card--back {
+  transition:0.4s;
+}
+
+.swipe-svg {
+  display: none;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 57%;
+  left: 40%;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  animation: movepng 1s infinite;
+}
+
+@keyframes movepng {
+  0% {
+    transform: translateX(5px);    
   }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
