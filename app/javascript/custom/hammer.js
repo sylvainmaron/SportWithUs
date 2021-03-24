@@ -10,6 +10,7 @@ const initHammer = (callback) => {
   cards.forEach(setupDragAndDrop);
   
   function setupDragAndDrop(card) {
+
     const hammertime = new Hammer(card);
     const play = card.querySelector(".play");
     const pass = card.querySelector(".pass");
