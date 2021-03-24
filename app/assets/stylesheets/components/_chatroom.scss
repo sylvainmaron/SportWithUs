@@ -1,20 +1,19 @@
 .chatroom {
   height: calc(100vh - 70px);
-  background: url(https://images.pexels.com/photos/6077806/pexels-photo-6077806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: url(https://th.bing.com/th/id/Re541cb65873372a257ba9c59a2a59376?rik=HkBZd0pq1roRxA&riu=http%3a%2f%2fjcsatanas.fr%2fwp-content%2fuploads%2f2014%2f11%2fgrisarg.jpg&ehk=4PAH6zE5A9SCOT8J5VYGPmgFwYX73pD7BkYaBt5Oi8o%3d&risl=&pid=ImgRaw);
   background-position: center;
 }
 
 .chat-title {
   text-align: center;
   color: white;
-  
-} 
+
+}
 
 .all-messages {
   padding: 2px;
   .author {
     color: white;
-    margin-right: 20px;
     background-color: rgba(255, 255, 255, 0);
   }
 }
@@ -22,17 +21,10 @@
 .message-container {
   border-radius: 12px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
   padding-left: 16px;
   padding-right: 16px;
   background-color: rgba(81, 192, 81, 0.849);
-}
-
-p {
-  margin: 0 auto;
-  font-size: 20px;
+  display: inline-block;
 }
 
 i {
@@ -40,10 +32,10 @@ i {
 }
 
 #messages{
- display: flex;
+/*  display: flex;
  flex-flow: column;
  overflow: scroll;
- height: 75%;
+ height: 75%; */
 }
 
 .input-chatroom {
@@ -53,3 +45,14 @@ i {
   width: 95%;
   margin: 0 auto;
 }
+
+#name {
+  color: black;
+  font-weight: bolder;
+}
+
+#date {
+  text-align:right;
+  justify-content: right;
+}
+
