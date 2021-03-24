@@ -16,7 +16,7 @@
         </div>
       <ul class="onglets">
         <li class="bookings-onglet active">Bookings</li>
-        <li class="reviews-onglet">Reviews</li>
+        <li class="reviews-onglet">Historical</li>
       </ul>
       <div class="main-modal">
         <div class="modal-bookings">
@@ -25,10 +25,10 @@
               <ul>
                 <div class="booked">
                   <div class="avatar">     
-                    <%= l(booking.offer.play_time, format: :short) %>
+                    <%= l(booking.offer.play_time, format: :short) %>h
                   </div>
                   <li>
-                    <%= booking.offer.title %><%= link_to booking.status, offer_path(booking.offer), class: "profile-play-btn" %>
+                    <%= booking.offer.title %><%= link_to "Match details", offer_path(booking.offer), class: "profile-play-btn" %>
                     <%= link_to booking_path(booking), method: :delete, class: "profile-delete-btn" do %>
                         <i class="far fa-times-circle"></i>
                       <% end %>

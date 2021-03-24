@@ -17,4 +17,5 @@ const modalle = () => {
     onglets.forEach(toggleTabs)    
   }
 }
+
 export { modalle }

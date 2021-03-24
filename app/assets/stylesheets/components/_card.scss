@@ -12,9 +12,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 5px;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 100px);
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -43,12 +43,12 @@
     background-color: rgba(255, 255, 255, 0.719);
     color: #000000;
     position: absolute;
-    bottom: 12%;
+    bottom: 5%;
     left: 5%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     overflow: hidden;
-    height: 20%;
+    height: 25%;
 
     .title-offer {
       text-align: center;
@@ -91,8 +91,8 @@
     color: #2ecc71;
     transform: rotateZ(-25deg);
     font-weight: bold;
-    font-size: 48px;
-    border: 3px solid #2ecc71;
+    font-size: 52px;
+    border: 4px solid #2ecc71;
     border-radius: 8px;
     padding: 5px 5px;
     opacity: 0;
@@ -102,8 +102,8 @@
     color: #e74c3c;
     transform: rotateZ(25deg);
     font-weight: bold;
-    font-size: 48px;
-    border: 3px solid #e74c3c;
+    font-size: 52px;
+    border: 4px solid #e74c3c;
     border-radius: 8px;
     padding: 5px 5px;
     opacity: 0;
@@ -123,17 +123,17 @@
 }
 
 .card--match {
-  transition: 0.4s;
+  transition: 1s;
   transform:translateX(1500px) translateY(600px) rotate(90deg);
 }
 
 .card--next {
-  transition: 0.4s;
+  transition: 1s;
   transform:translateX(-1500px) translateY(600px) rotate(-90deg);
 }
 
 .card--back {
-  transition:0.4s;
+  transition:0.5s;
 }
 
 .swipe-svg {
@@ -141,21 +141,17 @@
   position: relative;
   width: 100px;
   height: 100px;
-  top: 57%;
-  left: 40%;
+  top: 50%;
+  left: 38%;
   z-index: 10;
-  transition: all 0.5s ease-in-out;
-  animation: movepng 1s infinite;
+  animation: movepng 0.7s infinite alternate;
 }
 
 @keyframes movepng {
   0% {
-    transform: translateX(5px);    
-  }
-  50% {
-    transform: translateX(0);
+    transform: translateX(-5px);    
   }
   100% {
-    transform: translateX(-5px);
+    transform: translateX(5px);
   }
 }
