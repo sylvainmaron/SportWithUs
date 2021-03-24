@@ -49,6 +49,53 @@
     text-align: center;
     padding-left: 0;
 }
+
+  .both-counters {
+    height: 240px;
+    width: 100%;
+    
+
+    .game-counter {
+      color: white;
+      background: #061321;
+      border-radius: 80px;
+      border: 3px outset #587ea7;
+      font-weight: bolder;
+      box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
+      margin-left: 50px;
+      margin-bottom: 16px;
+        p {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 40px;
+        }
+      }
+      
+      .current-booking {
+        color: white;
+        background: #061321;
+        border-radius: 80px;
+        border: 3px outset #587ea7;
+        font-weight: bolder;
+        box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
+        margin-right: 50px;
+        margin-bottom: 16px;
+
+        p {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 40px;
+        }
+      }
+
+    
+  }
+
+
 i{
     color: rgba(0, 0, 0, 0.800);
     background-color: rgba(rgb(255, 255, 255), 0.1);

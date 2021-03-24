@@ -4,28 +4,34 @@
   <div class="home-title">
   <h1 class="text-center"> SP<i class="fa fa-futbol regular"></i>RT WITH US</span></h1></div>
   </div>
-  <ul class="text-container">
+  <div class="text-container">
   <br>
 
   <% if user_signed_in? %>
-        <li><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></li>
-        <br>
-        <li><%= link_to "Host a game", new_offer_path, class: "btn btn-classic" %></li>
-        <br>
-        <li><%= link_to "My profile", user_path(current_user), class: "btn btn-classic" %></li>
-        <br>
-        </li>
-        <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-classic" %></li>
-        <br>
-        </li>
+    <br>
+    <div class="both-counters">
+      <div class="game-counter">
+        <h4><%= current_user.offers.count %></h4>
+          <p> available games</p></div>
+      <div class="current-booking">
+        <h4><%= current_user.bookings.count %></h4>
+          <p> games booked !</p>
+      </div>
+    </div>
+    
+      <br>
+      <br>
+    <div><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></div>
+      <br>
+    
 
         <% else %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "btn btn-classic" %>
-          </li>
+          </div>
         <% end %>
 
 
-  </ul>
+  </div>
   </div>
 </div>
