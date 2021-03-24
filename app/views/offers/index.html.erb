@@ -5,10 +5,26 @@
         <h2 class="play">Play</h2>
         <h2 class="pass">Pass</h2>
       </div>
-      <div class="card-text">
-        <h3> <%= offer.title %> </h3>
-        <h3> <%= offer.play_time %> </h3>
-        <h3> <%= rand(5..11) %>/<%= offer.min_players %> players </h3>
+
+      <div class="time-offer">
+            <h3> <%= l(offer.play_time, format: :short) %> </h3></div>
+        <div class="card-text">
+          <div class="title-offer">
+            <h3> <%= offer.title %> </h3></div>
+
+            <% random = rand(5..14) %><% min = offer.min_players %>
+          
+          
+          <div class="players-missing">
+            <% if min > random %>
+              <h3><%= (min - random) %> spots left</h3>
+            <% else %>
+              <h3>The game is full</h3>
+            <% end %></div>
+          <div class="num-players">  
+            <h3> <%= random%>/<%= min%> players </h3>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
