@@ -4,7 +4,7 @@ const helpSvg = () => {
     if (true) {
         svg.style.display = "none"
       }
-      const set = setTimeout(display, 5000);
+      const set = setTimeout(display, 15000);
   }
 
   const display = () => {
@@ -12,7 +12,7 @@ const helpSvg = () => {
   }
 
   if (svg) {
-    const set = setTimeout(display, 3000);
+    const set = setTimeout(display, 2000);
     document.addEventListener("touchstart", detected);
   }
 

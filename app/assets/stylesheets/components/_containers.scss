@@ -106,14 +106,30 @@ i{
 
 .show-container {
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: auto;
     background-color: $green;
 }
 
 .mini-show {
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    color: black;
     background-color: white;
-    width: 100vw;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    padding: 4px 8px;
+    margin: 30px auto 0;
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.in-green {
+    color: $green;
 }
 
 .box-btn {
