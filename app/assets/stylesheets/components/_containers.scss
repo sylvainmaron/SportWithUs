@@ -6,10 +6,10 @@
     border-radius: 4px;
 }
 
-.home-cage{
-    height: 90px;
-    width: 400px;
+.home-cage {
+    width: 120%;
     transform: translateX(-40px);
+    margin-top: -32px;
 }
 .home-title {
     height: 90px;
@@ -43,12 +43,26 @@
     padding: 30px;
 }
 .text-center {
-    margin-top: 5px;
+    background-color: white;
+    padding: 8px;
+    height: 120px;
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -60px;
+    position: absolute;
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: 'Candal', sans-serif;
+      font-size: 44px;
+      margin-top: 16px;
+    }
 }
 .text-container {
     text-align: center;
-    padding-left: 0;
+    margin-top: 88px;
 }
+
 
   .both-counters {
     height: 240px;
@@ -109,9 +123,15 @@ i{
     color: rgba(0, 0, 0, 0.800);
     background-color: rgba(rgb(255, 255, 255), 0.1);
 }
-.fa-futbol {
-    margin: -12px;
-}
+// .fa-futbol {
+//     margin: -12px;
+// }
+// .fa-futbol:before {
+//     padding: 14px;
+//     font-size: 32px;
+//     display: block;
+//     margin: -12px;
+//   }
 
 .show-container {
     width: 100vw;
@@ -184,4 +204,20 @@ i{
 
 .temp-deg2 {
     text-align: start;
+}
+
+
+.home-text {
+    background-color: #061321;
+    color: white;
+    width: 100%;
+    margin-left: -30px;
+    position: absolute;
+    top: 100px;
+
+    h2 {
+        margin-top: 14px;
+        font-size: 28px;
+    }
+
 }

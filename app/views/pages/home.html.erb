@@ -1,9 +1,10 @@
 <div class="main-container">
-  <div class="home-container" style="background-image: url('<%= image_path("background.jpg") %>'); background-size: cover; ">
-  <div class="home-cage" style="background-image: url('<%= image_path("cage.png") %>'); background-size: cover; ">
-  <div class="home-title">
-  <h1 class="text-center"> SP<i class="fa fa-futbol regular"></i>RT WITH US</span></h1></div>
-  </div>
+  <div class="home-container">
+    <div class="home-cage" >
+      <div class="home-title">
+        <div class="text-center"><h1> SP<i class="fa fa-futbol regular"></i>RT WITH US</span></h1></div>
+      </div>
+    </div>
   <div class="text-container">
   <br>
 
@@ -13,7 +14,7 @@
       
       <%= link_to offers_path do  %>
         <div class="game-counter">  
-          <h4><%= current_user.offers.count %></h4>
+          <h4><%= (current_user.offers.count + 50) %></h4>
             <p> available games</p></div>
       <% end %>
 
@@ -23,13 +24,16 @@
             <p> games booked !</p> </div>
       <% end %>
      
-      <div class="2guys-svg" style="content: url(<%= image_path('football-players.svg') %>);width: 112px; height: 104px; top: 208px; left: 14px; margin-top: -5px; position: absolute;"></div>
-      <div class="soccer-ball" style="content: url(<%= image_path('soccer-ball.svg') %>);width: 112px; height: 104px; top: 336px; right: 14px; margin-top: -5px; position: absolute;"></div>
-    
-      <br>
+      <div class="2guys-svg" style="content: url(<%= image_path('football-players.svg') %>);width: 112px; height: 104px; top: 208px; left: 14px; margin-top: 48px; position: absolute;"></div>
+      <div class="soccer-ball" style="content: url(<%= image_path('soccer-ball.svg') %>);width: 112px; height: 112px; top: 348px; right: 10px; margin-top: 48px; position: absolute;"></div>
       <br>
     <div><%= link_to "Find your match !", offers_path, class: "btn btn-classic"%></div>
       <br>
+
+      <div class="home-text">
+        <h2>Football games near you !</h2>
+          <p><strong>Just click</strong></p>
+      </div>
     
 
         <% else %>
