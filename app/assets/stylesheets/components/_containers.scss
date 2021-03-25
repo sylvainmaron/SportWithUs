@@ -9,7 +9,7 @@
 .home-cage{
     height: 90px;
     width: 400px;
-    transform: translateX(-24px);
+    transform: translateX(-40px);
 }
 .home-title {
     height: 90px;
@@ -58,30 +58,37 @@
     .game-counter {
       color: white;
       background: #061321;
-      border-radius: 80px;
+      border-top-left-radius: 64px;
+      border-bottom-left-radius: 64px;
       border: 3px outset #587ea7;
       font-weight: bolder;
       box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
-      margin-left: 50px;
+      margin-left: 100px;
       margin-bottom: 16px;
+      width: 100%;
+
         p {
           font-size: 24px;
+          margin-right: 42px;
         }
 
         h4 {
           font-size: 40px;
+          margin-right: 32px;
         }
       }
       
       .current-booking {
         color: white;
         background: #061321;
-        border-radius: 80px;
+        border-top-right-radius: 64px;
+        border-bottom-right-radius: 64px;
         border: 3px outset #587ea7;
         font-weight: bolder;
         box-shadow: 0px 0px 0px 1.5px rgba(white ,0.55);
-        margin-right: 50px;
+        margin-right: 100px;
         margin-bottom: 16px;
+        margin-left: -32px;
 
         p {
           font-size: 24px;
