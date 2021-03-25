@@ -9,9 +9,10 @@
 
   #login-container {
 
-    background: linear-gradient(#39ac2f, rgba(255, 255, 255, 0.3));
-
+    background: rgb(57,172,47);
+    background: linear-gradient(180deg, rgba(57,172,47,1) 0%, rgba(57,172,47,1) 0%, rgba(230,241,229,1) 64%, rgba(255,255,255,1) 100%);
   .nickname-age {
+    color: white;
     display: flex;
     flex-flow: column;
     height: auto;
@@ -23,13 +24,15 @@
   .profile-link {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 30px;
+    margin-left: 210px;
+    margin-top: 8px;
   }
 
   .profile-logout {
     font-size: 18px;
     background-color: white;
-    border: 1px solid rgba($color: #000000, $alpha: 1.0);
+    border: 1px solid rgba($color: #39ac2f, $alpha: 1.0);
+    // box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
     border-radius: 4px;
     padding: 0 6px;
     color: #39ac2f;
@@ -39,7 +42,9 @@
   .profile-edit {
     font-size: 18px;
     background-color: white;
-    border: 1px solid rgba($color: #000000, $alpha: 1.0);
+    border: 1px solid rgba($color: #39ac2f, $alpha: 1.0);
+    // box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .2), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+
     border-radius: 4px;
     padding: 0 6px;
     color: #39ac2f;
@@ -70,13 +75,22 @@
 }
 
 .description {
-  background-color: white;
-  border: 1px ridge rgb(211, 211, 211);
-  border-radius: 8px;
+  // background-color: rgba($color: #ffffff, $alpha: 1);
+  // border: 1px ridge rgb(170, 253, 167);
+  // box-shadow: 7px 1px 30px 0px rgb(216, 216, 216);
+  background-color: #fff;
+
+	// padding: 1.125em 1.5em;
+	// font-size: 1.25em;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
   padding: 16px;
   margin: 10px auto 0;
   width: 95%;
   height: auto;
+  // border-radius: 12px;
+
+
 
   p {
     text-align: center;
@@ -98,7 +112,7 @@
   font-size: 22px;
   font-weight: bold;
   padding-left: 20px;
-  margin: 0;
+  // margin-top: 10px;
   color: rgba($color: #000000, $alpha: 0.4);
   li {
     margin-right: 20px;
@@ -141,7 +155,13 @@
 .booked {
   display: flex;
   position: relative;
-  border: 1px solid rgba($color: #000000, $alpha: 0.5);
+  background-color: #fff;
+
+	// padding: 1.125em 1.5em;
+	// font-size: 1.25em;
+	// border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+  // border: 1px solid rgba($color: #000000, $alpha: 0.5);
   border-radius: 8px;
   width: 90%;
   margin: 0 auto 10px;
@@ -171,6 +191,8 @@
 .passed-games > .avatar {
   background-color:#e74c3c;
   opacity: 1;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+
 }
 
 .profile-play-btn {

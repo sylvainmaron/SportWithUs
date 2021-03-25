@@ -1,17 +1,20 @@
 .chatroom {
   height: calc(100vh - 70px);
-  background: url(https://th.bing.com/th/id/Re541cb65873372a257ba9c59a2a59376?rik=HkBZd0pq1roRxA&riu=http%3a%2f%2fjcsatanas.fr%2fwp-content%2fuploads%2f2014%2f11%2fgrisarg.jpg&ehk=4PAH6zE5A9SCOT8J5VYGPmgFwYX73pD7BkYaBt5Oi8o%3d&risl=&pid=ImgRaw);
+  background: rgb(240,240,240);
+  background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(218,218,218,1) 56%, rgba(199,199,199,1) 100%);
   background-position: center;
 }
 
 .chat-title {
   text-align: center;
   color: white;
-
+  background-color: rgba(57,172,47,0.5);
+  padding-bottom: 6px;
 }
 
 .all-messages {
   padding: 2px;
+  margin-top: 8px;
   .author {
     color: white;
     background-color: rgba(255, 255, 255, 0);
