@@ -1,9 +1,11 @@
 <div class="new-offer">
-  <%= simple_form_for @offer do |f| %>
-    <%= f.input :title %>
-    <%= f.input :play_time %>
-    <%= f.input :min_players %>
-    <%= f.submit "Create offer", class: "btn btn-animate new-offer-btn" %>
-  <% end %>
+  <div class="new-offer-content">
+    <h2>Create your own Match !</h2>
+    <%= simple_form_for @offer do |f| %>
+      <%= f.input :title %>
+      <%= f.input :play_time %>
+      <%= f.input :min_players %>
+      <%= f.submit "Create offer", class: "btn btn-animate new-offer-btn" %>
+    <% end %>
+  </div>
 </div>
-
