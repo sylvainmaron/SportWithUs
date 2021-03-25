@@ -70,7 +70,7 @@
   .both-counters {
     height: 240px;
     width: 100%;
-    
+
 
     .game-counter {
       color: white;
@@ -98,7 +98,7 @@
           text-decoration: none;
         }
       }
-      
+
       .current-booking {
         color: white;
         background: #061321;
@@ -124,7 +124,7 @@
         }
       }
 
-    
+
   }
 
 
@@ -247,4 +247,7 @@ i{
         font-size: 28px;
     }
 
+    p {
+        letter-spacing: 2px;
+    }
 }
