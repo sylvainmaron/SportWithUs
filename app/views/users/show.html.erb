@@ -3,7 +3,7 @@
     <div id="login-container">
         <div class="profile-img" style="background-image: url(<%= cl_image_path current_user.photo.key %>)"></div>
           <div class="nickname-age">
-            <h2><%= current_user.nickname%></h2>
+            <h2 id="name"><%= current_user.nickname%></h2>
             <h2 class="profile-age"><%= current_user.age %> years old</h2>
           </div>
 

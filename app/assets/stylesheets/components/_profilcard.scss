@@ -13,6 +13,7 @@
     background: linear-gradient(180deg, rgba(57,172,47,1) 0%, rgba(57,172,47,1) 0%, rgba(230,241,229,1) 64%, rgba(255,255,255,1) 100%);
   .nickname-age {
     color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     display: flex;
     flex-flow: column;
     height: auto;
@@ -50,7 +51,10 @@
     color: #39ac2f;
     font-weight: bold;
   }
-
+  #name {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+    color: white;
+  }
   .profile-age {
     font-size: 24px;
     padding-left: 10px;
