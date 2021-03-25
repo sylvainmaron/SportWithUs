@@ -11,13 +11,15 @@
     <br>
     <div class="both-counters">
       <div class="game-counter">
+        
         <h4><%= current_user.offers.count %></h4>
           <p> available games</p></div>
       <div class="current-booking">
         <h4><%= current_user.bookings.count %></h4>
           <p> games booked !</p>
       </div>
-    </div>
+      <div class="2guys-svg" style="content: url(<%= image_path('football-players.svg') %>);width: 112px; height: 104px; top: 208px; left: 14px; margin-top: -5px; position: absolute;"></div>
+      <div class="soccer-ball" style="content: url(<%= image_path('soccer-ball.svg') %>);width: 112px; height: 104px; top: 336px; right: 14px; margin-top: -5px; position: absolute;"></div>
     
       <br>
       <br>
