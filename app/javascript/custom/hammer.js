@@ -11,9 +11,11 @@ const initHammer = (callback) => {
   
   function setupDragAndDrop(card) {
 
-    const hammertime = new Hammer(card);
     const play = card.querySelector(".play");
     const pass = card.querySelector(".pass");
+
+    const hammertime = new Hammer.Manager(card);
+    hammertime.add( new Hammer.Pan({ threshold: 0, pointers: 0 }) );
 
     hammertime.on('pan', function (e) {
       card.classList.remove('card--back');
