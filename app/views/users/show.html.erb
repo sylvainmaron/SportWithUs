@@ -22,7 +22,7 @@
       <div class="main-modal">
         <div class="modal-bookings">
           <% current_user.bookings.each do |booking| %>
-            <% if booking.offer.play_time > Date.today %>
+            <% if booking.is_coming? %>
               <ul>
                 <div class="booked">
                   <div class="avatar">

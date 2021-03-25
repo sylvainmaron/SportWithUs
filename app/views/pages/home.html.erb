@@ -14,13 +14,13 @@
 
       <%= link_to offers_path do  %>
         <div class="game-counter">
-          <h4><%= (current_user.offers.count + 50) %></h4>
+          <h4><%= (Offer.count + 50) %></h4>
             <p> available games</p></div>
       <% end %>
 
       <%= link_to user_path(current_user) do  %>
         <div class="current-booking" >
-          <h4><%= current_user.bookings.count %></h4>
+          <h4><%= current_user.booking_coming_count %></h4>
             <p> games booked !</p> </div>
       <% end %>
 
