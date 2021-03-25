@@ -33,7 +33,19 @@ p, a, li, input, h2, h3, h4 {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
+    h2 {
+        text-align: center;
+    }
+}
+
+.sign-up {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: -30px auto;
+    width: 90%;
+    height: calc(100vh + 220px);
     h2 {
         text-align: center;
     }
